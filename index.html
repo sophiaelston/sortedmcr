@@ -1,1038 +1,730 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>MCR Deals — Manchester's Best Deals</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Manchester Deals &amp; Student Discounts 2025 | Happy Hours &amp; Bottomless Brunch | Sorted MCR</title>
+  <meta name="description" content="The best Manchester deals for students in 2025. Find cheap eats, happy hours, bottomless brunch and nightlife deals across the Northern Quarter, Ancoats, Deansgate and Great Northern. Free directory — no sign-up needed." />
+  <meta name="keywords" content="manchester deals, manchester student deals, manchester happy hour, bottomless brunch manchester, cheap eats manchester, northern quarter deals, manchester food deals, student discounts manchester, manchester drinks deals, ancoats deals, deansgate deals" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://sortedmcr.com/" />
+  <link rel="sitemap" type="application/xml" href="/sitemap.xml" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🐝</text></svg>">
+  <meta property="og:title" content="Manchester Deals &amp; Student Discounts 2025 | Sorted MCR">
+  <meta property="og:description" content="Find the best food, drinks, happy hours and bottomless brunch deals across Manchester. Free student deals directory — Northern Quarter, Ancoats, Deansgate and more.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://sortedmcr.com">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Manchester Deals &amp; Student Discounts 2025 | Sorted MCR">
+  <meta name="twitter:description" content="Find the best food, drinks, happy hours and bottomless brunch deals across Manchester. Free — no sign-up needed.">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Sorted MCR",
+    "url": "https://sortedmcr.com",
+    "description": "Manchester deals directory for students — food, drinks, happy hours and bottomless brunch across the Northern Quarter, Ancoats, Deansgate and Great Northern.",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "https://sortedmcr.com/?q={search_term_string}",
+      "query-input": "required name=search_term_string"
+    }
+  }
+  </script>
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
     :root {
-      --yellow:  #FFCB00;
-      --dark:    #1A1A1A;
-      --red:     #E63946;
-      --teal:    #2BBFAE;
-      --purple:  #6B4FBB;
-      --orange:  #FF6B35;
-      --green:   #2ecc71;
-      --card-bg: #FFFFFF;
-      --page-bg: #F2EFE9;
-      --muted:   #666666;
-      --radius:  14px;
-      --shadow:  0 4px 24px rgba(0,0,0,0.09);
+      --yellow: #FFCB00;
+      --dark:   #1A1A1A;
+      --red:    #E63946;
+      --teal:   #2BBFAE;
+      --purple: #6B4FBB;
+      --orange: #FF6B35;
+      --green:  #2E7D32;
+      --page:   #F2EFE9;
+      --card:   #FFFFFF;
+      --muted:  #666;
+      --radius: 14px;
+      --shadow: 0 4px 20px rgba(0,0,0,0.09);
     }
     html { scroll-behavior: smooth; }
-    body {
-      font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
-      background: var(--page-bg);
-      color: var(--dark);
-      min-height: 100vh;
-    }
+    body { font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; background: var(--page); color: var(--dark); min-height: 100vh; }
 
     /* ── HEADER ── */
-    header {
-      background: var(--dark); padding: 0 1.5rem;
-      position: sticky; top: 0; z-index: 200;
-      box-shadow: 0 2px 16px rgba(0,0,0,0.4);
-    }
-    .header-inner {
-      max-width: 1160px; margin: 0 auto;
-      display: flex; align-items: center;
-      justify-content: space-between; height: 62px;
-    }
-    .logo { display:flex; align-items:center; gap:10px; text-decoration:none; color:#fff; }
-    .logo-bee { font-size:1.5rem; }
-    .logo-text { font-size:1.35rem; font-weight:900; letter-spacing:-0.5px; }
-    .logo-text span { color:var(--yellow); }
-    .header-pill {
-      background:var(--yellow); color:var(--dark);
-      font-size:.68rem; font-weight:800;
-      padding:3px 10px; border-radius:20px;
-      letter-spacing:.6px; text-transform:uppercase;
-    }
-    .live-badge {
-      display:flex; align-items:center; gap:6px;
-      background:#2a2a2a; padding:6px 13px;
-      border-radius:20px; font-size:.76rem; font-weight:600; color:#fff;
-    }
-    .live-dot {
-      width:7px; height:7px; background:#44ee88;
-      border-radius:50%; animation:blink 1.6s infinite;
-    }
-    @keyframes blink { 0%,100%{opacity:1;transform:scale(1)} 50%{opacity:.4;transform:scale(1.4)} }
+    header { background: var(--dark); color: #fff; padding: 0 1.25rem; position: sticky; top: 0; z-index: 100; box-shadow: 0 2px 16px rgba(0,0,0,0.35); }
+    .header-inner { max-width: 1200px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; height: 60px; }
+    .logo { display: flex; align-items: center; gap: 9px; text-decoration: none; color: #fff; }
+    .logo-bee { font-size: 1.5rem; }
+    .logo-text { font-size: 1.35rem; font-weight: 900; letter-spacing: -0.5px; }
+    .logo-text .y { color: var(--yellow); }
+    .logo-mcr { font-size: 0.72rem; font-weight: 700; letter-spacing: 1.5px; color: rgba(255,255,255,0.45); text-transform: uppercase; display: block; line-height: 1; margin-top: 1px; }
+    .header-tag { background: rgba(255,255,255,0.08); color: rgba(255,255,255,0.75); font-size: 0.75rem; font-weight: 600; padding: 5px 12px; border-radius: 20px; letter-spacing: 0.3px; }
+    .dir-badge { display: flex; align-items: center; gap: 6px; background: #2a2a2a; padding: 6px 12px; border-radius: 20px; font-size: 0.78rem; font-weight: 600; color: rgba(255,255,255,0.7); }
+    @media(max-width:580px){ .header-tag { display:none; } }
 
     /* ── HERO ── */
-    .hero {
-      background: linear-gradient(135deg,#12111a 0%,#2d1f5e 55%,#1a1a2e 100%);
-      color:#fff; padding:3.5rem 1.5rem 3rem;
-      text-align:center; position:relative; overflow:hidden;
-    }
-    .hero::after {
-      content:'🐝'; position:absolute; font-size:18rem;
-      opacity:.035; bottom:-3rem; right:-2rem; pointer-events:none; line-height:1;
-    }
-    .hero-eyebrow {
-      font-size:.78rem; font-weight:700; letter-spacing:2.5px;
-      text-transform:uppercase; color:var(--yellow); margin-bottom:1rem;
-    }
-    .hero h1 {
-      font-size:clamp(2rem,5.5vw,3.4rem);
-      font-weight:900; line-height:1.08; margin-bottom:.85rem;
-    }
-    .hero h1 span { color:var(--yellow); }
-    .hero-sub {
-      font-size:1.05rem; color:rgba(255,255,255,0.65);
-      max-width:500px; margin:0 auto 2rem; line-height:1.6;
-    }
+    .hero { background: linear-gradient(140deg, #111 0%, #2a1260 60%, #1a3a5c 100%); color: #fff; padding: 2.5rem 1.25rem 2rem; text-align: center; position: relative; overflow: hidden; }
+    .hero::after { content:'🐝'; position:absolute; font-size:18rem; opacity:.035; bottom:-4rem; right:-2rem; pointer-events:none; line-height:1; }
+    .hero-eyebrow { font-size: 0.75rem; font-weight: 800; letter-spacing: 2px; text-transform: uppercase; color: var(--yellow); margin-bottom: 0.6rem; }
+    .hero h1 { font-size: clamp(1.9rem, 5vw, 3rem); font-weight: 900; line-height: 1.1; margin-bottom: 0.7rem; }
+    .hero h1 .y { color: var(--yellow); }
+    .hero-sub { font-size: 1rem; color: rgba(255,255,255,0.68); max-width: 500px; margin: 0 auto 1.6rem; line-height: 1.5; }
+    .hero-pills { display: flex; gap: 8px; justify-content: center; flex-wrap: wrap; }
+    .hero-pill { background: rgba(255,255,255,0.12); border: 1px solid rgba(255,255,255,0.18); color: rgba(255,255,255,0.85); font-size: 0.78rem; font-weight: 600; padding: 6px 14px; border-radius: 20px; }
 
-    /* ── SEARCH BAR ── */
-    .search-wrap {
-      max-width:520px; margin:0 auto; position:relative;
-    }
-    .search-input {
-      width:100%; padding:15px 52px 15px 20px;
-      border-radius:50px; border:none;
-      font-size:1rem; outline:none;
-      box-shadow:0 4px 24px rgba(0,0,0,0.3);
-      font-family:inherit;
-    }
-    .search-input:focus { box-shadow:0 4px 24px rgba(0,0,0,0.4), 0 0 0 3px var(--yellow); }
-    .search-clear {
-      position:absolute; right:18px; top:50%;
-      transform:translateY(-50%);
-      background:none; border:none; cursor:pointer;
-      font-size:1.2rem; color:#999;
-      display:none; padding:2px 6px; border-radius:50%;
-    }
-    .search-clear.show { display:block; }
-    .search-icon {
-      position:absolute; right:20px; top:50%;
-      transform:translateY(-50%);
-      font-size:1.1rem; pointer-events:none;
-    }
-    .search-icon.hide { display:none; }
+    /* ── SEARCH BAR (below hero, above main) ── */
+    .search-section { background: var(--dark); padding: 0 1.25rem 1.25rem; }
+    .search-wrap { max-width: 680px; margin: 0 auto; position: relative; }
+    .search-input { width: 100%; padding: 15px 52px 15px 20px; border-radius: 50px; border: none; font-size: 1rem; background: #fff; outline: none; box-shadow: 0 4px 24px rgba(0,0,0,0.3); color: var(--dark); transition: box-shadow 0.2s; }
+    .search-input:focus { box-shadow: 0 4px 30px rgba(255,203,0,0.4); }
+    .search-input::placeholder { color: #999; }
+    .search-icon { position: absolute; right: 20px; top: 50%; transform: translateY(-50%); font-size: 1.1rem; pointer-events: none; }
+    .search-hint { text-align: center; color: rgba(255,255,255,0.4); font-size: 0.72rem; margin-top: 0.5rem; }
 
-    /* ── STATS ── */
-    .stats-bar { background:var(--yellow); padding:.7rem 1.5rem; }
-    .stats-inner {
-      max-width:1160px; margin:0 auto;
-      display:flex; gap:2rem; justify-content:center; flex-wrap:wrap;
-    }
-    .stat { display:flex; align-items:center; gap:7px; font-size:.83rem; font-weight:800; color:var(--dark); }
+    /* ── STATS BAR ── */
+    .stats-bar { background: var(--yellow); padding: 0.7rem 1.25rem; }
+    .stats-inner { max-width: 1200px; margin: 0 auto; display: flex; gap: 1.5rem; justify-content: center; flex-wrap: wrap; }
+    .stat { display: flex; align-items: center; gap: 7px; font-size: 0.82rem; font-weight: 700; color: var(--dark); }
 
     /* ── MAIN ── */
-    .main-wrap { max-width:1160px; margin:0 auto; padding:2rem 1.5rem 3rem; }
-
-    /* ── PROMO BANNER ── */
-    .promo-banner {
-      background:linear-gradient(130deg,#6B4FBB 0%,#2BBFAE 100%);
-      border-radius:var(--radius); padding:1.4rem 1.75rem;
-      color:#fff; margin-bottom:2rem;
-      display:flex; align-items:center; gap:1.2rem; flex-wrap:wrap;
-    }
-    .promo-emoji { font-size:2.2rem; flex-shrink:0; }
-    .promo-text h3 { font-size:1.05rem; font-weight:900; margin-bottom:.2rem; }
-    .promo-text p  { font-size:.85rem; opacity:.88; line-height:1.5; }
-
-    /* ── SECTION LABEL ── */
-    .section-label {
-      font-size:.72rem; font-weight:700; letter-spacing:1.8px;
-      text-transform:uppercase; color:var(--muted); margin-bottom:.7rem;
-    }
+    .main-wrap { max-width: 1200px; margin: 0 auto; padding: 1.75rem 1.25rem 3rem; }
 
     /* ── DAY NAV ── */
-    .day-nav {
-      display:flex; gap:8px; overflow-x:auto;
-      padding-bottom:4px; margin-bottom:1.6rem; scrollbar-width:none;
-    }
-    .day-nav::-webkit-scrollbar { display:none; }
-    .day-btn {
-      flex-shrink:0; padding:10px 22px; border-radius:50px;
-      border:2px solid #ddd; background:#fff; cursor:pointer;
-      font-size:.86rem; font-weight:700; color:var(--muted);
-      transition:all .18s; display:flex;
-      flex-direction:column; align-items:center; gap:3px; line-height:1.2;
-    }
-    .day-btn .day-count { font-size:.68rem; font-weight:600; color:var(--muted); }
-    .day-btn:hover { border-color:var(--yellow); color:var(--dark); }
-    .day-btn.active { background:var(--dark); border-color:var(--dark); color:#fff; }
-    .day-btn.active .day-count { color:rgba(255,255,255,.55); }
-    .day-btn.is-today { border-color:var(--yellow); }
-    .day-btn.is-today .day-label::after { content:' ●'; color:var(--yellow); font-size:.6rem; }
-    .day-nav.searching { opacity:.45; pointer-events:none; }
+    .section-label { font-size: 0.7rem; font-weight: 800; letter-spacing: 1.5px; text-transform: uppercase; color: var(--muted); margin-bottom: 0.6rem; }
+    .day-nav { display: flex; gap: 6px; overflow-x: auto; padding-bottom: 4px; margin-bottom: 1.25rem; scrollbar-width: none; }
+    .day-nav::-webkit-scrollbar { display: none; }
+    .day-btn { flex-shrink: 0; min-width: 72px; padding: 9px 14px; border-radius: 10px; border: 2px solid #ddd; background: var(--card); cursor: pointer; font-size: 0.82rem; font-weight: 700; color: var(--muted); transition: all 0.18s; display: flex; flex-direction: column; align-items: center; gap: 2px; }
+    .day-btn:hover { border-color: var(--yellow); color: var(--dark); }
+    .day-btn.active { background: var(--dark); border-color: var(--dark); color: #fff; }
+    .day-btn .cnt { font-size: 0.68rem; font-weight: 600; opacity: 0.6; }
+    .day-btn.active .cnt { opacity: 0.55; }
+    .day-btn.today-marker { position: relative; }
+    .day-btn.today-marker::after { content: '•'; color: var(--yellow); position: absolute; top: 3px; right: 6px; font-size: 1rem; line-height: 1; }
 
-    /* ── CAT FILTERS ── */
-    .cat-filters { display:flex; gap:8px; flex-wrap:wrap; margin-bottom:1.6rem; }
-    .cat-btn {
-      padding:7px 15px; border-radius:8px; border:none;
-      background:#fff; cursor:pointer; font-size:.8rem;
-      font-weight:700; color:var(--muted); transition:all .18s;
-      display:flex; align-items:center; gap:5px;
-      box-shadow:0 1px 4px rgba(0,0,0,.07);
-    }
-    .cat-btn:hover { background:#ebebeb; color:var(--dark); }
-    .cat-btn.active { background:var(--yellow); color:var(--dark); }
+    /* ── SUBCATEGORY FILTER ── */
+    .sub-filters { display: flex; gap: 6px; flex-wrap: wrap; margin-bottom: 1.4rem; }
+    .sub-btn { padding: 8px 15px; border-radius: 8px; border: none; background: #fff; cursor: pointer; font-size: 0.8rem; font-weight: 700; color: var(--muted); transition: all 0.18s; display: flex; align-items: center; gap: 5px; box-shadow: 0 1px 4px rgba(0,0,0,0.07); }
+    .sub-btn:hover { background: #eee; color: var(--dark); }
+    .sub-btn.active { color: var(--dark); }
+    .sub-btn[data-sub="all"].active   { background: var(--dark); color: #fff; }
+    .sub-btn[data-sub="food"].active  { background: #FF6B35; color: #fff; }
+    .sub-btn[data-sub="lunch"].active { background: #2BBFAE; color: #fff; }
+    .sub-btn[data-sub="drinks"].active{ background: #6B4FBB; color: #fff; }
+    .sub-btn[data-sub="brunch"].active{ background: linear-gradient(90deg,#BF953F,#FCF6BA,#B38728); color: var(--dark); }
+    .sub-btn[data-sub="nightlife"].active    { background: #1A237E; color: #fff; }
+    .sub-btn[data-sub="entertainment"].active{ background: #2E7D32; color: #fff; }
 
-    /* ── RESULTS BAR ── */
-    .results-bar {
-      display:flex; align-items:baseline;
-      justify-content:space-between; margin-bottom:1.2rem;
-      flex-wrap:wrap; gap:.4rem;
-    }
-    .results-title { font-size:1.25rem; font-weight:900; }
-    .results-count { font-size:.82rem; color:var(--muted); font-weight:600; }
+    /* ── SEARCH MODE BANNER ── */
+    .search-mode-bar { background: #fff3cd; border: 1px solid #ffe083; border-radius: 8px; padding: 10px 16px; margin-bottom: 1.25rem; font-size: 0.85rem; font-weight: 600; color: #7a5c00; display: none; align-items: center; justify-content: space-between; gap: 10px; }
+    .search-mode-bar.show { display: flex; }
+    .search-clear { background: none; border: none; cursor: pointer; font-size: 0.8rem; font-weight: 700; color: #7a5c00; text-decoration: underline; }
 
-    /* ── GRID ── */
-    .deals-grid {
-      display:grid;
-      grid-template-columns:repeat(auto-fill, minmax(300px,1fr));
-      gap:1.2rem;
-    }
+    /* ── RESULTS HEADER ── */
+    .results-header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 1.1rem; flex-wrap: wrap; gap: 0.5rem; }
+    .results-title { font-size: 1.25rem; font-weight: 900; }
+    .results-count { font-size: 0.82rem; color: var(--muted); font-weight: 600; }
 
-    /* ── CARD ── */
-    .deal-card {
-      background:var(--card-bg); border-radius:var(--radius);
-      box-shadow:var(--shadow); overflow:hidden;
-      display:flex; flex-direction:column; position:relative;
-      transition:transform .18s, box-shadow .18s;
-      cursor:pointer; text-decoration:none; color:inherit;
-    }
-    .deal-card:hover {
-      transform:translateY(-5px);
-      box-shadow:0 14px 40px rgba(0,0,0,.16);
-    }
-    .deal-card:hover .visit-link { opacity:1; }
+    /* ── DEALS GRID ── */
+    .deals-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(295px, 1fr)); gap: 1.1rem; }
 
-    .card-strip { height:5px; }
-    .strip-food         { background:var(--orange); }
-    .strip-lunch        { background:var(--green); }
-    .strip-drinks       { background:var(--teal); }
-    .strip-nightlife    { background:var(--purple); }
-    .strip-entertainment{ background:var(--red); }
-    .strip-shopping     { background:var(--yellow); }
+    /* ── DEAL CARD ── */
+    .deal-card { background: var(--card); border-radius: var(--radius); box-shadow: var(--shadow); overflow: hidden; display: flex; flex-direction: column; transition: transform 0.18s, box-shadow 0.18s; position: relative; }
+    .deal-card:hover { transform: translateY(-3px); box-shadow: 0 10px 36px rgba(0,0,0,0.13); }
+    .card-stripe { height: 5px; }
+    .stripe-food  { background: #FF6B35; }
+    .stripe-lunch { background: #2BBFAE; }
+    .stripe-drinks{ background: #6B4FBB; }
+    .stripe-nightlife    { background: #3949AB; }
+    .stripe-entertainment{ background: #2E7D32; }
+    .stripe-brunch{ background: linear-gradient(90deg,#BF953F,#FCF6BA,#B38728); }
+    .card-body { padding: 1rem 1.1rem 0.7rem; flex: 1; }
+    .card-row1 { display: flex; align-items: flex-start; justify-content: space-between; gap: 0.5rem; margin-bottom: 0.45rem; }
+    .sub-chip { font-size: 0.67rem; font-weight: 800; letter-spacing: 0.5px; text-transform: uppercase; padding: 3px 8px; border-radius: 6px; white-space: nowrap; }
+    .chip-food  { background: #FFF0E6; color: #C14A00; }
+    .chip-lunch { background: #E3F7F5; color: #1A7A73; }
+    .chip-drinks{ background: #EDE7F6; color: #5E35B1; }
+    .chip-nightlife    { background: #E8EAF6; color: #283593; }
+    .chip-entertainment{ background: #E8F5E9; color: #2E7D32; }
+    .chip-brunch{ background: #FFF8E1; color: #8B6914; }
+    .sav-badge { background: var(--yellow); color: var(--dark); font-size: 0.75rem; font-weight: 900; padding: 4px 9px; border-radius: 6px; white-space: nowrap; flex-shrink: 0; }
+    .card-venue { font-size: 1.05rem; font-weight: 900; margin-bottom: 0.3rem; line-height: 1.2; }
+    .card-venue a { color: var(--dark); text-decoration: none; border-bottom: 2px solid var(--yellow); transition: color 0.15s; }
+    .card-venue a:hover { color: #7a5c00; }
+    .card-deal { font-size: 0.88rem; color: #333; line-height: 1.45; margin-bottom: 0.7rem; }
+    .card-tags { display: flex; flex-wrap: wrap; gap: 5px; }
+    .tag { display: flex; align-items: center; gap: 4px; font-size: 0.7rem; font-weight: 600; padding: 3px 8px; border-radius: 20px; background: #F2F2F2; color: #555; white-space: nowrap; }
+    .tag-student { background: var(--dark); color: var(--yellow); }
+    .tag-booking { background: #FFF3E0; color: #BF360C; }
+    .tag-redeem  { background: #E8F5E9; color: #2E7D32; cursor: pointer; text-decoration: none; }
+    .tag-redeem:hover { background: #C8E6C9; }
+    .card-footer { padding: 0.6rem 1.1rem 0.75rem; display: flex; align-items: center; justify-content: space-between; gap: 0.5rem; border-top: 1px solid #F0F0F0; flex-wrap: wrap; }
+    .loc-chip { font-size: 0.7rem; font-weight: 700; padding: 3px 9px; border-radius: 20px; }
+    .time-note { font-size: 0.7rem; color: var(--muted); font-weight: 600; display: flex; align-items: center; gap: 3px; }
+    .hot-flag { position: absolute; top: 10px; right: 10px; background: #E63946; color: #fff; font-size: 0.62rem; font-weight: 800; padding: 3px 7px; border-radius: 6px; letter-spacing: 0.4px; text-transform: uppercase; z-index: 2; }
 
-    .card-body { padding:1.1rem 1.2rem; flex:1; }
-    .card-top {
-      display:flex; justify-content:space-between;
-      align-items:flex-start; margin-bottom:.55rem; gap:8px;
-    }
-    .card-cat {
-      font-size:.68rem; font-weight:800; letter-spacing:.8px;
-      text-transform:uppercase; padding:3px 9px; border-radius:6px; white-space:nowrap;
-    }
-    .c-food         { background:#FFF0E6; color:var(--orange); }
-    .c-lunch        { background:#E8FFF1; color:#1a9b51; }
-    .c-drinks       { background:#E6FAF8; color:#1a9d8f; }
-    .c-nightlife    { background:#F0EBFF; color:var(--purple); }
-    .c-entertainment{ background:#FFE8E9; color:var(--red); }
-    .c-shopping     { background:#FFFBE6; color:#9B7A00; }
+    /* ── BRUNCH CARD SPECIAL STYLING ── */
+    .deal-card.brunch-card { background: linear-gradient(145deg, #fffdf5 0%, #fff9e6 100%); border: 1px solid #f0d060; }
+    .brunch-card .card-body { padding-top: 1.1rem; }
+    .brunch-price { font-size: 1.6rem; font-weight: 900; color: #8B6914; line-height: 1; margin-bottom: 0.1rem; }
+    .brunch-dur { font-size: 0.75rem; font-weight: 600; color: #9a7a1c; margin-bottom: 0.5rem; }
+    .book-btn { display: inline-block; background: var(--dark); color: var(--yellow); font-size: 0.75rem; font-weight: 800; padding: 6px 14px; border-radius: 8px; text-decoration: none; letter-spacing: 0.3px; transition: background 0.15s; }
+    .book-btn:hover { background: #333; }
 
-    .savings-badge {
-      background:var(--yellow); color:var(--dark);
-      font-size:.76rem; font-weight:900;
-      padding:4px 10px; border-radius:6px;
-      white-space:nowrap; flex-shrink:0;
-    }
-    .card-venue { font-size:1.08rem; font-weight:900; margin-bottom:.28rem; line-height:1.25; }
-    .card-deal  { font-size:.9rem; color:#333; line-height:1.45; margin-bottom:.7rem; }
-    .card-pills { display:flex; flex-wrap:wrap; gap:5px; }
-    .pill {
-      font-size:.72rem; font-weight:600; color:var(--muted);
-      background:#F3F3F3; padding:3px 9px; border-radius:20px;
-      display:flex; align-items:center; gap:3px;
-    }
-    .card-footer {
-      padding:.7rem 1.2rem; border-top:1px solid #EFEFEF;
-      display:flex; align-items:center;
-      justify-content:space-between; gap:8px;
-    }
-    .card-loc { font-size:.76rem; color:var(--muted); font-weight:600; }
-    .visit-link {
-      font-size:.74rem; font-weight:700; color:var(--dark);
-      background:var(--yellow); padding:3px 10px;
-      border-radius:6px; opacity:0; transition:opacity .18s;
-      white-space:nowrap;
-    }
-    .booking-tag {
-      background:#FFF0E6; color:var(--orange);
-      font-size:.66rem; font-weight:800; padding:3px 8px; border-radius:6px;
-    }
-    .hot-flag {
-      position:absolute; top:12px; right:12px;
-      background:var(--red); color:#fff;
-      font-size:.63rem; font-weight:800;
-      padding:3px 8px; border-radius:6px;
-      letter-spacing:.5px; text-transform:uppercase; z-index:2;
-    }
+    /* ── NO RESULTS ── */
+    .no-results { text-align: center; padding: 3rem; color: var(--muted); display: none; }
+    .no-results.show { display: block; }
+    .no-results-icon { font-size: 3rem; margin-bottom: 1rem; }
 
-    /* ── EMPTY STATE ── */
-    .no-results { display:none; text-align:center; padding:3.5rem 1rem; color:var(--muted); }
-    .no-results.show { display:block; }
-    .no-results-icon { font-size:3rem; margin-bottom:.75rem; }
-
-    /* ── SUBMIT SECTION ── */
-    .submit-section {
-      margin-top:3rem; background:var(--dark);
-      border-radius:var(--radius); padding:2rem 2rem 2.5rem; color:#fff;
-    }
-    .submit-section h2 { font-size:1.3rem; font-weight:900; margin-bottom:.4rem; }
-    .submit-section > p { font-size:.88rem; color:rgba(255,255,255,.6); margin-bottom:1.5rem; }
-    .submit-form { display:grid; grid-template-columns:1fr 1fr; gap:1rem; }
-    .form-group { display:flex; flex-direction:column; gap:5px; }
-    .form-group.full { grid-column:1 / -1; }
-    .form-group label {
-      font-size:.72rem; font-weight:700; letter-spacing:.8px;
-      text-transform:uppercase; color:rgba(255,255,255,.55);
-    }
-    .form-group input,
-    .form-group select,
-    .form-group textarea {
-      background:#2a2a2a; border:1.5px solid #3a3a3a;
-      border-radius:8px; padding:10px 12px;
-      color:#fff; font-size:.9rem; font-family:inherit;
-      outline:none; transition:border-color .18s;
-    }
-    .form-group input:focus,
-    .form-group select:focus,
-    .form-group textarea:focus { border-color:var(--yellow); }
-    .form-group input::placeholder,
-    .form-group textarea::placeholder { color:rgba(255,255,255,.25); }
-    .form-group select option { background:#2a2a2a; }
-    .form-group textarea { resize:vertical; min-height:80px; }
-    .day-checkboxes { display:flex; flex-wrap:wrap; gap:8px; margin-top:2px; }
-    .day-check {
-      display:flex; align-items:center; gap:6px;
-      background:#2a2a2a; border:1.5px solid #3a3a3a;
-      border-radius:8px; padding:7px 12px; cursor:pointer;
-      font-size:.82rem; font-weight:600; color:rgba(255,255,255,.65);
-      transition:all .18s; user-select:none;
-    }
-    .day-check input { display:none; }
-    .day-check.checked { background:var(--yellow); border-color:var(--yellow); color:var(--dark); }
-    .submit-btn {
-      grid-column:1 / -1; background:var(--yellow); color:var(--dark);
-      border:none; padding:13px 24px; border-radius:10px;
-      font-size:1rem; font-weight:900; cursor:pointer;
-      transition:opacity .18s; margin-top:.5rem;
-    }
-    .submit-btn:hover { opacity:.88; }
-    .submit-btn:disabled { opacity:.5; cursor:not-allowed; }
-    .submit-success {
-      display:none; grid-column:1 / -1;
-      background:#1a3a2a; border:1.5px solid var(--green);
-      border-radius:10px; padding:1rem 1.25rem;
-      color:var(--green); font-weight:700;
-      font-size:.92rem; text-align:center;
-    }
-    .submit-success.show { display:block; }
-    .submit-error {
-      display:none; grid-column:1 / -1;
-      background:#3a1a1a; border:1.5px solid var(--red);
-      border-radius:10px; padding:1rem 1.25rem;
-      color:#ff8a8a; font-weight:700;
-      font-size:.88rem; text-align:center;
-    }
-    .submit-error.show { display:block; }
-
-    /* ── BUSINESS SECTION ── */
-    .biz-section {
-      margin-top: 2rem;
-      background: linear-gradient(135deg, #1a1230 0%, #2d1f5e 60%, #1a2a1a 100%);
-      border-radius: var(--radius);
-      padding: 2.5rem 2rem;
-      color: #fff;
-    }
-    .biz-inner {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 2.5rem;
-      align-items: start;
-    }
-    .biz-left { display: flex; gap: 1rem; align-items: flex-start; }
-    .biz-icon { font-size: 2.5rem; flex-shrink: 0; }
-    .biz-title { font-size: 1.3rem; font-weight: 900; margin-bottom: .4rem; }
-    .biz-sub   { font-size: .88rem; color: rgba(255,255,255,.65); line-height: 1.55; margin-bottom: 1rem; }
-    .biz-perks { list-style: none; display: flex; flex-direction: column; gap: .4rem; }
-    .biz-perks li { font-size: .84rem; color: rgba(255,255,255,.8); font-weight: 600; }
-
-    .biz-form-wrap {
-      background: rgba(255,255,255,.06);
-      border: 1.5px solid rgba(255,255,255,.12);
-      border-radius: 12px;
-      padding: 1.5rem;
-    }
-    .biz-form { display: flex; flex-direction: column; gap: .85rem; }
-    .biz-field { display: flex; flex-direction: column; gap: 5px; }
-    .biz-field.full { grid-column: 1 / -1; }
-    .biz-field label {
-      font-size: .72rem; font-weight: 700;
-      letter-spacing: .8px; text-transform: uppercase;
-      color: rgba(255,255,255,.5);
-    }
-    .biz-field input,
-    .biz-field textarea {
-      background: rgba(255,255,255,.08);
-      border: 1.5px solid rgba(255,255,255,.15);
-      border-radius: 8px; padding: 10px 12px;
-      color: #fff; font-size: .9rem;
-      font-family: inherit; outline: none;
-      transition: border-color .18s;
-    }
-    .biz-field input:focus,
-    .biz-field textarea:focus { border-color: var(--yellow); }
-    .biz-field input::placeholder,
-    .biz-field textarea::placeholder { color: rgba(255,255,255,.25); }
-    .biz-field textarea { resize: vertical; min-height: 80px; }
-    .biz-btn {
-      background: var(--yellow); color: var(--dark);
-      border: none; padding: 13px 24px; border-radius: 10px;
-      font-size: 1rem; font-weight: 900; cursor: pointer;
-      transition: opacity .18s; margin-top: .25rem; width: 100%;
-    }
-    .biz-btn:hover { opacity: .88; }
-    .biz-btn:disabled { opacity: .5; cursor: not-allowed; }
-    .biz-success {
-      display: none; background: #1a3a2a;
-      border: 1.5px solid var(--green); border-radius: 10px;
-      padding: 1rem; color: var(--green);
-      font-weight: 700; font-size: .9rem; text-align: center;
-    }
-    .biz-success.show { display: block; }
-    .biz-error {
-      display: none; background: #3a1a1a;
-      border: 1.5px solid var(--red); border-radius: 10px;
-      padding: 1rem; color: #ff8a8a;
-      font-weight: 700; font-size: .88rem; text-align: center;
-    }
-    .biz-error.show { display: block; }
-
-    @media (max-width: 760px) {
-      .biz-inner { grid-template-columns: 1fr; }
-      .biz-left  { flex-direction: column; }
-    }
+    /* ── DISCLAIMER ── */
+    .disclaimer { background: #fff; border: 1px solid #eee; border-radius: var(--radius); padding: 1rem 1.25rem; margin-bottom: 1.5rem; font-size: 0.8rem; color: #777; line-height: 1.5; }
+    .disclaimer strong { color: var(--dark); }
 
     /* ── FOOTER ── */
-    footer {
-      background:var(--dark); color:rgba(255,255,255,.45);
-      text-align:center; padding:2rem 1.5rem;
-      font-size:.8rem; line-height:1.7; margin-top:2rem;
-    }
-    footer .footer-bee { font-size:1.8rem; margin-bottom:.4rem; }
-    footer strong { color:#fff; }
-    footer a { color:var(--yellow); text-decoration:none; }
+    footer { background: var(--dark); color: rgba(255,255,255,0.45); text-align: center; padding: 2rem 1.25rem; margin-top: 3rem; font-size: 0.8rem; line-height: 1.6; }
+    .footer-seo { margin-top: 1.25rem; padding-top: 1.25rem; border-top: 1px solid rgba(255,255,255,0.08); color: rgba(255,255,255,0.22); font-size: 0.72rem; max-width: 680px; margin-left: auto; margin-right: auto; line-height: 1.7; }
+    footer .footer-logo { font-size: 1.8rem; margin-bottom: 0.4rem; }
+    footer strong { color: rgba(255,255,255,0.8); }
+    footer a { color: var(--yellow); text-decoration: none; }
 
     /* ── RESPONSIVE ── */
-    @media (max-width:640px) {
-      .header-pill { display:none; }
-      .deals-grid  { grid-template-columns:1fr; }
-      .hero        { padding:2.5rem 1rem; }
-      .promo-banner{ flex-direction:column; text-align:center; }
-      .stats-inner { gap:1rem; }
-      .submit-form { grid-template-columns:1fr; }
-      .form-group.full { grid-column:1; }
-      .submit-btn, .submit-success, .submit-error { grid-column:1; }
+    @media(max-width:600px) {
+      .hero { padding: 2rem 1rem 1.5rem; }
+      .deals-grid { grid-template-columns: 1fr; }
+      .sub-filters { gap: 5px; }
+      .sub-btn { padding: 7px 11px; font-size: 0.75rem; }
     }
   </style>
 </head>
 <body>
 
-<!-- HEADER -->
+<!-- ─── HEADER ─── -->
 <header>
   <div class="header-inner">
     <a href="#" class="logo">
       <span class="logo-bee">🐝</span>
-      <span class="logo-text">MCR<span>Deals</span></span>
+      <span class="logo-text"><span class="y">Sorted</span> <span style="display:inline-flex;flex-direction:column;vertical-align:middle">MCR</span></span>
     </a>
-    <span class="header-pill">Manchester Deals</span>
-    <div class="live-badge"><span class="live-dot"></span>Live deals</div>
+    <span class="header-tag">Manchester's deals, sorted.</span>
+    <div class="dir-badge">🗺️ Deals directory</div>
   </div>
 </header>
 
-<!-- HERO + SEARCH -->
+<!-- ─── HERO ─── -->
 <section class="hero">
-  <p class="hero-eyebrow">🏙️ Manchester City Centre</p>
-  <h1>Save big.<br><span>Eat, drink & play</span> for less.</h1>
-  <p class="hero-sub">The best deals across Manchester — updated weekly.</p>
-  <div class="search-wrap">
-    <input class="search-input" id="searchInput" type="text" placeholder="Search a venue or deal…" autocomplete="off"/>
-    <span class="search-icon" id="searchIcon">🔍</span>
-    <button class="search-clear" id="searchClear" onclick="clearSearch()" title="Clear search">✕</button>
+  <p class="hero-eyebrow">🐝 Manchester's Free Deals Directory</p>
+  <h1>Manchester deals.<br><span class="y">Sorted.</span></h1>
+  <p class="hero-sub">The best student deals in Manchester — cheap food, happy hours, bottomless brunch and nightlife across the Northern Quarter, Ancoats, Deansgate and Great Northern. Updated regularly, always free.</p>
+  <div class="hero-pills">
+    <span class="hero-pill">🍕 Food &amp; Lunch</span>
+    <span class="hero-pill">🍹 Happy Hour</span>
+    <span class="hero-pill">🥂 Bottomless Brunch</span>
+    <span class="hero-pill">🎉 Nightlife</span>
+    <span class="hero-pill">🎓 Student Deals</span>
   </div>
 </section>
 
-<!-- STATS -->
+<!-- ─── SEARCH ─── -->
+<div class="search-section">
+  <div class="search-wrap">
+    <input class="search-input" type="text" id="searchInput" placeholder="Search venue, deal type, or keyword… (e.g. 'cocktail', 'pizza', 'Turtle Bay')" autocomplete="off" />
+    <span class="search-icon">🔍</span>
+  </div>
+  <p class="search-hint">Searching shows results across all days</p>
+</div>
+
+<!-- ─── STATS BAR ─── -->
 <div class="stats-bar">
   <div class="stats-inner">
-    <div class="stat">🎯 <span id="totalDeals">0</span>&nbsp;deals on today</div>
-    <div class="stat">📍 All Manchester city centre</div>
-    <div class="stat">♻️ Updated every week</div>
+    <span class="stat">🎯 <span id="todayCount">—</span> deals available today</span>
+    <span class="stat">🗂️ <span id="totalCount">—</span> deals in the directory</span>
+    <span class="stat">⚠️ Always confirm with the venue before visiting</span>
   </div>
 </div>
 
-<!-- MAIN -->
+<!-- ─── MAIN ─── -->
 <main class="main-wrap">
 
-  <div class="promo-banner">
-    <span class="promo-emoji">💡</span>
-    <div class="promo-text">
-      <h3>Click any deal card to visit the venue's website</h3>
-      <p>Deals are verified but can change — always confirm with the venue before ordering. Booking required where noted.</p>
-    </div>
+  <!-- Disclaimer -->
+  <div class="disclaimer">
+    <strong>ℹ️ About this directory:</strong> All deal information was accurate at the time of listing. Prices, times and availability are subject to change at each venue's discretion. Always check with the venue directly before making a trip. Venue links open the venue's website in a new tab.
   </div>
 
-  <p class="section-label" id="dayNavLabel">Browse by day</p>
+  <!-- Day nav -->
+  <p class="section-label">Browse by day</p>
   <nav class="day-nav" id="dayNav">
-    <button class="day-btn" data-day="monday"><span class="day-label">Monday</span><span class="day-count" id="cnt-monday"></span></button>
-    <button class="day-btn" data-day="tuesday"><span class="day-label">Tuesday</span><span class="day-count" id="cnt-tuesday"></span></button>
-    <button class="day-btn" data-day="wednesday"><span class="day-label">Wednesday</span><span class="day-count" id="cnt-wednesday"></span></button>
-    <button class="day-btn" data-day="thursday"><span class="day-label">Thursday</span><span class="day-count" id="cnt-thursday"></span></button>
-    <button class="day-btn" data-day="friday"><span class="day-label">Friday</span><span class="day-count" id="cnt-friday"></span></button>
-    <button class="day-btn" data-day="saturday"><span class="day-label">Saturday</span><span class="day-count" id="cnt-saturday"></span></button>
-    <button class="day-btn" data-day="sunday"><span class="day-label">Sunday</span><span class="day-count" id="cnt-sunday"></span></button>
+    <button class="day-btn" data-day="monday"><span>Monday</span><span class="cnt" id="cnt-monday"></span></button>
+    <button class="day-btn" data-day="tuesday"><span>Tuesday</span><span class="cnt" id="cnt-tuesday"></span></button>
+    <button class="day-btn" data-day="wednesday"><span>Wednesday</span><span class="cnt" id="cnt-wednesday"></span></button>
+    <button class="day-btn" data-day="thursday"><span>Thursday</span><span class="cnt" id="cnt-thursday"></span></button>
+    <button class="day-btn" data-day="friday"><span>Friday</span><span class="cnt" id="cnt-friday"></span></button>
+    <button class="day-btn" data-day="saturday"><span>Saturday</span><span class="cnt" id="cnt-saturday"></span></button>
+    <button class="day-btn" data-day="sunday"><span>Sunday</span><span class="cnt" id="cnt-sunday"></span></button>
   </nav>
 
-  <div class="cat-filters">
-    <button class="cat-btn active" data-cat="all">🍽️ All</button>
-    <button class="cat-btn" data-cat="lunch">🥗 Lunch</button>
-    <button class="cat-btn" data-cat="food">🍕 Food</button>
-    <button class="cat-btn" data-cat="drinks">🍹 Drinks</button>
-    <button class="cat-btn" data-cat="nightlife">🎉 Nightlife</button>
+  <!-- Subcategory filters -->
+  <div class="sub-filters" id="subFilters">
+    <button class="sub-btn active" data-sub="all">🍽️ All</button>
+    <button class="sub-btn" data-sub="food">🍕 Food</button>
+    <button class="sub-btn" data-sub="lunch">🍱 Lunch</button>
+    <button class="sub-btn" data-sub="drinks">🍹 Drinks</button>
+    <button class="sub-btn" data-sub="brunch">🥂 Bottomless Brunch</button>
+    <button class="sub-btn" data-sub="nightlife">🎉 Nightlife</button>
+    <button class="sub-btn" data-sub="entertainment">🎯 Entertainment</button>
   </div>
 
-  <div class="results-bar">
+  <!-- Search mode bar -->
+  <div class="search-mode-bar" id="searchBar">
+    <span id="searchBarText"></span>
+    <button class="search-clear" onclick="clearSearch()">✕ Clear search</button>
+  </div>
+
+  <!-- Results header -->
+  <div class="results-header">
     <h2 class="results-title" id="resultsTitle">Today's Deals</h2>
     <span class="results-count" id="resultsCount"></span>
   </div>
 
+  <!-- Cards grid -->
   <div class="deals-grid" id="dealsGrid"></div>
+
+  <!-- No results -->
   <div class="no-results" id="noResults">
     <div class="no-results-icon">🐝</div>
-    <p id="noResultsMsg">No deals found — try a different day or category!</p>
-  </div>
-
-  <!-- SUBMIT A DEAL -->
-  <div class="submit-section">
-    <h2>🐝 Know a deal we're missing?</h2>
-    <p>Submit it below and we'll get it added to the site.</p>
-    <!--
-      ══════════════════════════════════════════════════════
-      EMAIL SETUP — takes 2 minutes, your email stays hidden
-      ══════════════════════════════════════════════════════
-      1. Go to https://formspree.io and sign up with your email
-      2. Click "New Form", give it a name like "MCR Deals Submissions"
-      3. Copy your Form ID (looks like: xpzvwkrb)
-      4. Replace YOUR_FORM_ID below with it
-      That's it — submissions go to your inbox, your email never appears on the site.
-    -->
-    <div class="submit-form" id="submitForm">
-      <div class="form-group">
-        <label>Venue Name *</label>
-        <input type="text" id="f-venue" placeholder="e.g. The Refuge"/>
-      </div>
-      <div class="form-group">
-        <label>Category *</label>
-        <select id="f-cat">
-          <option value="">Select…</option>
-          <option value="lunch">🥗 Lunch</option>
-          <option value="food">🍕 Food</option>
-          <option value="drinks">🍹 Drinks</option>
-          <option value="nightlife">🎉 Nightlife</option>
-        </select>
-      </div>
-      <div class="form-group full">
-        <label>Deal Description *</label>
-        <textarea id="f-deal" placeholder="e.g. 2 cocktails for £12 every evening"></textarea>
-      </div>
-      <div class="form-group">
-        <label>Time</label>
-        <input type="text" id="f-time" placeholder="e.g. 5pm – 9pm"/>
-      </div>
-      <div class="form-group">
-        <label>Location / Area</label>
-        <input type="text" id="f-loc" placeholder="e.g. Northern Quarter"/>
-      </div>
-      <div class="form-group full">
-        <label>Day(s) the deal runs</label>
-        <div class="day-checkboxes" id="dayCheckboxes">
-          <label class="day-check"><input type="checkbox" value="monday">  Mon</label>
-          <label class="day-check"><input type="checkbox" value="tuesday"> Tue</label>
-          <label class="day-check"><input type="checkbox" value="wednesday">Wed</label>
-          <label class="day-check"><input type="checkbox" value="thursday">Thu</label>
-          <label class="day-check"><input type="checkbox" value="friday">  Fri</label>
-          <label class="day-check"><input type="checkbox" value="saturday">Sat</label>
-          <label class="day-check"><input type="checkbox" value="sunday">  Sun</label>
-        </div>
-      </div>
-      <div class="form-group">
-        <label>Your Email (optional)</label>
-        <input type="email" id="f-email" placeholder="so we can confirm it's added"/>
-      </div>
-      <button class="submit-btn" id="submitBtn" onclick="submitDeal()">Submit Deal →</button>
-      <div class="submit-success" id="submitSuccess">✅ Thanks! We'll review and add your deal shortly.</div>
-      <div class="submit-error" id="submitError">❌ Something went wrong. Please try again or email us directly.</div>
-    </div>
-  </div>
-
-  <!-- BUSINESS ENQUIRIES -->
-  <div class="biz-section" id="bizSection">
-    <div class="biz-inner">
-      <div class="biz-left">
-        <span class="biz-icon">🏪</span>
-        <div>
-          <h2 class="biz-title">Get your venue featured</h2>
-          <p class="biz-sub">Reach thousands of deal-hunters in Manchester every week. Featured listings sit at the top of their category — guaranteed visibility.</p>
-          <ul class="biz-perks">
-            <li>✅ Featured badge &amp; priority placement</li>
-            <li>✅ Direct link to your bookings or website</li>
-            <li>✅ Listed across all relevant days</li>
-            <li>✅ Promoted on our social channels</li>
-          </ul>
-        </div>
-      </div>
-      <div class="biz-form-wrap">
-        <div class="biz-form" id="bizForm">
-          <div class="biz-field">
-            <label>Venue / Business Name *</label>
-            <input type="text" id="b-venue" placeholder="e.g. The Refuge"/>
-          </div>
-          <div class="biz-field">
-            <label>Your Name *</label>
-            <input type="text" id="b-name" placeholder="First and last name"/>
-          </div>
-          <div class="biz-field">
-            <label>Email Address *</label>
-            <input type="email" id="b-email" placeholder="your@email.com"/>
-          </div>
-          <div class="biz-field">
-            <label>Phone (optional)</label>
-            <input type="tel" id="b-phone" placeholder="+44 7700 000000"/>
-          </div>
-          <div class="biz-field full">
-            <label>Tell us about your deal / what you'd like</label>
-            <textarea id="b-msg" placeholder="e.g. We run 241 cocktails every Thursday and would love to be featured…"></textarea>
-          </div>
-          <button class="biz-btn" id="bizBtn" onclick="submitBiz()">Send Enquiry →</button>
-          <div class="biz-success" id="bizSuccess">✅ Thanks! We'll be in touch within 48 hours.</div>
-          <div class="biz-error"   id="bizError">❌ Something went wrong — please try again.</div>
-        </div>
-      </div>
-    </div>
+    <p><strong>No deals found.</strong><br>Try a different day, category or search term.</p>
   </div>
 
 </main>
 
+<!-- ─── FOOTER ─── -->
 <footer>
-  <div class="footer-bee">🐝</div>
-  <p><strong>MCR Deals — Manchester's Deals Hub</strong></p>
-  <p>Deals sourced from public listings and may change without notice.<br>
-  Always verify with the venue before visiting.<br>
-  Spotted an error or missing deal? <a href="#submitSection" onclick="document.getElementById('submitSection').scrollIntoView({behavior:'smooth'});return false;">Submit it here →</a></p>
+  <div class="footer-logo">🐝</div>
+  <p><strong>Sorted MCR — Manchester's deals, sorted.</strong></p>
+  <p>All information was accurate at time of listing. Deals, prices and times are subject to change at the venue's discretion. Confirm deals with the venue before visiting.</p>
+  <p style="margin-top:0.5rem">Got a deal to add? <a href="mailto:hello@sortedmcr.com">hello@sortedmcr.com</a></p>
+  <p class="footer-seo">Sorted MCR is a free Manchester deals directory for students. We list the best cheap eats, student discounts, happy hours, cocktail deals and bottomless brunch offers across Manchester city centre — including the Northern Quarter, Ancoats, Deansgate, Great Northern, Corn Exchange and Kampus. Whether you're looking for Monday deals, weekend bottomless brunch or the best happy hour in Manchester, it's all here in one place.</p>
 </footer>
 
 <script>
-// =============================================================================
-// VENUE URLS
-// Add or update website URLs here. Any venue not listed gets a Google search link.
-// =============================================================================
-const venueUrls = {
-  "All Bar One":        "https://www.allbarone.co.uk",
-  "Turtle Bay":         "https://www.turtle-bay.co.uk",
-  "Crazy Pedro's":      "https://www.crazypedros.co.uk",
-  "Shoryu":             "https://www.shoryuramen.com",
-  "Slug and Lettuce":   "https://www.slug-and-lettuce.co.uk",
-  "Pho":                "https://www.phocafe.co.uk",
-  "Purezza":            "https://purezza.co.uk",
-  "Simmons Bar":        "https://www.simmonsbar.co.uk",
-  "The Blues Kitchen":  "https://www.theblueskitchen.com/manchester",
-  "Yard and Coop":      "https://www.yardandcoop.com",
-  "Cane and Grain":     "https://caneandgrain.co.uk",
-  "Franco Manca":       "https://www.francomanca.co.uk",
-  "Junkyard Golf":      "https://junkyardgolfclub.co.uk/manchester",
-  "BrewDog":            "https://www.brewdog.com/uk/bars/uk/manchester",
+// ─────────────────────────────────────────────
+// VENUE DATA  (name → website + location)
+// ─────────────────────────────────────────────
+const V = {
+  "Affleck & Brown":   { loc: "Hilton St, NQ" },
+  "All Bar One":       { w: "https://www.allbarone.co.uk", loc: "Deansgate" },
+  "Bab":               { loc: "Stevenson Sq, NQ" },
+  "Birria Brothers":   { w: "https://www.birriabrotherstacos.co.uk", loc: "Oldham St, NQ" },
+  "Boogalú":           { w: "https://www.instagram.com/boogalumcr/", loc: "Tariff St, NQ" },
+  "BrewDog":           { w: "https://www.brewdog.com", loc: "City Centre" },
+  "Cane and Grain":    { w: "https://caneandgrain.co.uk", loc: "Deansgate" },
+  "Cargo":             { loc: "City Centre" },
+  "Chakalaka":         { w: "https://www.chakalakabar.com", loc: "Oldham St, NQ" },
+  "Crafty Pig":        { w: "https://www.socialpubandkitchen.co.uk/crafty-pig-manchester", loc: "Oldham St, NQ" },
+  "Crazy Pedro's":     { w: "https://crazypedros.co.uk", loc: "Bridge Street" },
+  "Diecast":           { w: "https://diecastmcr.com", loc: "Ducie St, Ancoats" },
+  "Dogtown":           { w: "https://www.instagram.com/dogtownmcr/", loc: "High St, NQ" },
+  "El Gato Negro":     { w: "https://www.elgatonegrotapas.com", loc: "King Street" },
+  "Evelyn's":          { w: "https://www.evelyns.co", loc: "Tib Street, NQ" },
+  "Factory":           { w: "https://factorymanchester.com", loc: "Oxford Road" },
+  "Foundry Project":   { w: "https://www.foundry-storestreet.co.uk", loc: "Store Street, NQ" },
+  "Franco Manca":      { w: "https://www.francomanca.co.uk", loc: "Piccadilly" },
+  "House of Fu":       { w: "https://hellohouseoffu.com", loc: "Portland Street" },
+  "Junkyard Golf":     { w: "https://www.junkyardgolfclub.co.uk/manchester", loc: "Corn Exchange" },
+  "Junior Jackson's":  { w: "https://lostcatnq.co.uk", loc: "Oldham St, NQ" },
+  "Lion's Den":        { loc: "Great Northern" },
+  "Lost Cat":          { w: "https://lostcatnq.co.uk", loc: "Oldham St, NQ" },
+  "Madre":             { w: "https://www.thisismadre.co.uk", loc: "Kampus" },
+  "Mala":              { loc: "Northern Quarter" },
+  "Nells":             { w: "https://nellspizza.co.uk", loc: "Northern Quarter" },
+  "Pen and Pencil":    { w: "https://thepenandpencilnq.co.uk", loc: "Dale St, NQ" },
+  "Pho":               { w: "https://www.phocafe.co.uk", loc: "Corn Exchange" },
+  "Pixel Bar":         { w: "https://pixelbar.co.uk", loc: "Church St, NQ" },
+  "Prezzo":            { w: "https://www.prezzorestaurants.co.uk", loc: "City Centre" },
+  "Public":            { loc: "Tib Street, NQ" },
+  "Purezza":           { w: "https://purezza.co.uk", loc: "Oldham St, NQ" },
+  "Ramona":            { w: "https://ramonamanchester.co.uk", loc: "Swan St, Ancoats" },
+  "Shack":             { w: "https://www.shackbarandgrill.co.uk", loc: "High St, NQ" },
+  "Shoryu":            { w: "https://shoryuramen.com", loc: "Corn Exchange" },
+  "Simmons Bar":       { w: "https://www.simmonsbar.co.uk", loc: "Deansgate" },
+  "Slug and Lettuce":  { w: "https://www.slugandlettuce.co.uk", loc: "Deansgate" },
+  "Smithfield Social": { loc: "Northern Quarter" },
+  "The Beeswing":      { w: "https://www.beeswingwine.co.uk", loc: "Kampus" },
+  "The Blues Kitchen": { w: "https://www.theblueskitchen.com/manchester", loc: "Great Northern" },
+  "The Firehouse":     { loc: "Swan St, Ancoats" },
+  "The Grosvenor":     { loc: "City Centre" },
+  "33":                { w: "https://www.33oldhamstreet.com", loc: "Oldham St, NQ" },
+  "Turtle Bay":        { w: "https://www.turtlebay.co.uk", loc: "Great Northern" },
+  "Wilson's Social":   { w: "https://wilsonssocial.co.uk", loc: "Oldham St, NQ" },
+  "Wolf at The Door":  { loc: "Thomas St, NQ" },
+  "Yard and Coop":     { w: "https://www.yardandcoop.com", loc: "Church St, NQ" },
 };
 
-function getVenueUrl(venue) {
-  return venueUrls[venue] || "https://www.google.com/search?q=" + encodeURIComponent(venue + " Manchester");
+// Location → colour
+function locStyle(loc) {
+  if (!loc) return { bg:"#F5F5F5", color:"#424242" };
+  if (loc.includes("NQ") || loc.includes("Northern Quarter")) return { bg:"#E0F5F3", color:"#1A6B65" };
+  if (loc.includes("Deansgate"))    return { bg:"#EDE7F6", color:"#5E35B1" };
+  if (loc.includes("Great Northern")) return { bg:"#FFF3E0", color:"#D84315" };
+  if (loc.includes("Corn Exchange")) return { bg:"#E3F2FD", color:"#1565C0" };
+  if (loc.includes("Ancoats"))      return { bg:"#E8F5E9", color:"#2E7D32" };
+  if (loc.includes("Kampus"))       return { bg:"#FCE4EC", color:"#880E4F" };
+  if (loc.includes("Piccadilly"))   return { bg:"#E1F5FE", color:"#0277BD" };
+  if (loc.includes("Oxford Road"))  return { bg:"#FFF8E1", color:"#E65100" };
+  if (loc.includes("King Street"))  return { bg:"#F3E5F5", color:"#6A1B9A" };
+  return { bg:"#F5F5F5", color:"#424242" };
 }
 
-// Contact (encoded so it's not readable as plain text in the page source)
-const _c = atob('c29waGlhZWxzdG9uOTEyQGdtYWlsLmNvbQ==');
+const ALL_DAYS = ["monday","tuesday","wednesday","thursday","friday","saturday","sunday"];
 
-// =============================================================================
+// ─────────────────────────────────────────────
 // DEALS DATA
-// =============================================================================
+// ─────────────────────────────────────────────
+// Fields: v=venue, d=deal text, s=subcategory, days=[], t=time, sav=savings badge,
+//         hot=bool, book=bool, student=bool, redeem=url, bookLink=url, dur=duration(brunch)
 const deals = [
 
-  // ── FOOD ──────────────────────────────────────────────────────────────────
-  { id:1,  venue:"All Bar One",       deal:"2 courses from £18 or 3 courses from £22",                                            days:["monday","tuesday","wednesday","thursday","sunday"],            category:"food",   time:"From 12pm",               location:"City Centre",     savings:"From £18",       booking:false, hot:false },
-  { id:2,  venue:"All Bar One",       deal:"4 Tapas dishes + 2 cocktails, Aperol Spritz or bottle of house wine from £28.95",     days:["tuesday"],                                                     category:"food",   time:"From 4pm",                location:"City Centre",     savings:"From £28.95",    booking:false, hot:false },
-  { id:3,  venue:"Birria Bros Tacos", deal:"25% off all tacos",                                                                   days:["tuesday"],                                                     category:"food",   time:"All day",                 location:"City Centre",     savings:"25% off",        booking:false, hot:false },
-  { id:4,  venue:"Boogalu",           deal:"25% off all food",                                                                    days:["monday"],                                                      category:"food",   time:"All day",                 location:"City Centre",     savings:"25% off",        booking:false, hot:false },
-  { id:5,  venue:"Cane and Grain",    deal:"50% off all food",                                                                    days:["monday"],                                                      category:"food",   time:"All day",                 location:"Northern Quarter",savings:"50% off",        booking:false, hot:true  },
-  { id:6,  venue:"Chakalaka",         deal:"50% off all mains",                                                                   days:["monday","tuesday","wednesday"],                                 category:"food",   time:"All day",                 location:"City Centre",     savings:"50% off",        booking:false, hot:true  },
-  { id:7,  venue:"Crafty Pig",        deal:"2-for-1 on all pizzas",                                                               days:["monday"],                                                      category:"food",   time:"All day",                 location:"City Centre",     savings:"241 pizzas",     booking:false, hot:false },
-  { id:8,  venue:"Crafty Pig",        deal:"Tacos and a Margarita for £14.50",                                                    days:["tuesday"],                                                     category:"food",   time:"11am – 9pm",              location:"City Centre",     savings:"£14.50",         booking:false, hot:false },
-  { id:9,  venue:"Crafty Pig",        deal:"Wings for just 40p each",                                                             days:["wednesday"],                                                   category:"food",   time:"11am – 9pm",              location:"City Centre",     savings:"40p wings",      booking:false, hot:true  },
-  { id:10, venue:"Crazy Pedro's",     deal:"Whole pizza £12.50 or slices from £3",                                                days:["monday","tuesday","wednesday","thursday","friday","sunday"],    category:"food",   time:"5pm – 10pm",              location:"Bridge St",       savings:"From £3",        booking:false, hot:false },
-  { id:11, venue:"Diecast",           deal:"40% off all food",                                                                    days:["wednesday"],                                                   category:"food",   time:"4pm – 10pm",              location:"Ducie St",        savings:"40% off",        booking:false, hot:true  },
-  { id:12, venue:"Foundry Project",   deal:"Buy one pizza, get one free",                                                         days:["monday"],                                                      category:"food",   time:"All day",                 location:"City Centre",     savings:"BOGOF",          booking:false, hot:false },
-  { id:13, venue:"House of Fu",       deal:"All ramen and rice bowls for £10",                                                    days:["monday","tuesday","wednesday","thursday","friday"],             category:"food",   time:"11:30am – 5:30pm",        location:"City Centre",     savings:"£10 bowls",      booking:false, hot:false },
-  { id:14, venue:"Madre",             deal:"£7 Tacos and £7 Churros",                                                             days:["tuesday"],                                                     category:"food",   time:"All day",                 location:"City Centre",     savings:"£7 tacos",       booking:false, hot:false },
-  { id:15, venue:"Pen and Pencil",    deal:"50% off all food",                                                                    days:["monday"],                                                      category:"food",   time:"All day",                 location:"City Centre",     savings:"50% off",        booking:false, hot:true  },
-  { id:16, venue:"Pixel Bar",         deal:"16\" pizza for £15 · Slices £4 (from 2pm)",                                           days:["monday"],                                                      category:"food",   time:"Slices 2pm+, Pizza 4–9pm",location:"City Centre",     savings:"From £4",        booking:false, hot:false },
-  { id:17, venue:"Pixel Bar",         deal:"16\" pizza for £15 · Slices £4 (from 12pm)",                                          days:["tuesday","wednesday","thursday","friday"],                      category:"food",   time:"Slices 12pm+, Pizza 4–9pm",location:"City Centre",    savings:"From £4",        booking:false, hot:false },
-  { id:18, venue:"Public",            deal:"£7 Burgers, Sandwiches & Noodles",                                                    days:["monday","tuesday","wednesday","thursday","friday"],             category:"food",   time:"4:30pm – 7pm",            location:"City Centre",     savings:"£7",             booking:false, hot:false },
-  { id:19, venue:"Public",            deal:"£7 Burgers, Sandwiches & Noodles",                                                    days:["sunday"],                                                      category:"food",   time:"All day",                 location:"City Centre",     savings:"£7",             booking:false, hot:false },
-  { id:20, venue:"Purezza",           deal:"Pizza Dice Challenge — roll to win up to 60% off your pizza",                         days:["monday","tuesday","wednesday","thursday","friday","sunday"],    category:"food",   time:"Until 5pm",               location:"City Centre",     savings:"Up to 60% off",  booking:false, hot:true  },
-  { id:21, venue:"Purezza",           deal:"Any 3 small dishes for £18",                                                          days:["monday","tuesday","wednesday","thursday","friday","sunday"],    category:"food",   time:"Until 5pm",               location:"City Centre",     savings:"3 for £18",      booking:false, hot:false },
-  { id:22, venue:"Shack",             deal:"50% off all food — booking required",                                                 days:["monday"],                                                      category:"food",   time:"All day",                 location:"City Centre",     savings:"50% off",        booking:true,  hot:true  },
-  { id:23, venue:"Shack",             deal:"2-for-1 burgers — booking required",                                                  days:["tuesday"],                                                     category:"food",   time:"All day",                 location:"City Centre",     savings:"241 burgers",    booking:true,  hot:false },
-  { id:24, venue:"Shoryu",            deal:"2 free bao buns when you order any ramen or curry",                                   days:["monday"],                                                      category:"food",   time:"All day",                 location:"City Centre",     savings:"Free bao buns",  booking:false, hot:true  },
-  { id:25, venue:"Slug and Lettuce",  deal:"Starter, main & a glass of wine for £23",                                            days:["monday","tuesday","wednesday","thursday","friday","sunday"],    category:"food",   time:"5pm – 9pm",               location:"City Centre",     savings:"£23 deal",       booking:false, hot:false },
-  { id:26, venue:"Smithfield Social", deal:"Order starter & main — a second guest gets the same for FREE",                       days:["tuesday"],                                                     category:"food",   time:"All day",                 location:"Smithfield",      savings:"BOGOF meals",    booking:false, hot:true  },
-  { id:27, venue:"The Grosvenor",     deal:"2-for-1 on all pizzas",                                                               days:["wednesday","sunday"],                                          category:"food",   time:"All day",                 location:"City Centre",     savings:"241 pizzas",     booking:false, hot:false },
-  { id:28, venue:"Turtle Bay",        deal:"2 courses £17 or 3 courses £20",                                                      days:["monday","tuesday","wednesday","thursday","friday"],             category:"food",   time:"Before 6:30pm",           location:"City Centre",     savings:"From £17",       booking:false, hot:false },
-  { id:29, venue:"Wolf at the Door",  deal:"Food for £6 · Bao buns £2–£3",                                                       days:["monday","tuesday","wednesday","thursday","friday","sunday"],    category:"food",   time:"12pm – 6pm",              location:"Northern Quarter",savings:"From £2",        booking:false, hot:false },
-  { id:30, venue:"7 Sins",            deal:"50% off all food",                                                                    days:["monday"],                                                      category:"food",   time:"All day",                 location:"City Centre",     savings:"50% off",        booking:false, hot:true  },
+// ════════════ FOOD ════════════
 
-  // ── LUNCH ─────────────────────────────────────────────────────────────────
-  { id:31, venue:"All Bar One",       deal:"Lunch dish and a drink for £12.50",                                                   days:["monday","tuesday","wednesday","thursday","friday"],             category:"lunch",  time:"12pm – 5pm",              location:"City Centre",     savings:"£12.50",         booking:false, hot:false },
-  { id:32, venue:"Bab",               deal:"£10 Lunch",                                                                          days:["monday","tuesday","wednesday","thursday","friday"],             category:"lunch",  time:"12pm – 3pm",              location:"City Centre",     savings:"£10 lunch",      booking:false, hot:false },
-  { id:33, venue:"Foundry Project",   deal:"Selected dishes for £8.95",                                                          days:["monday","tuesday","wednesday","thursday","friday"],             category:"lunch",  time:"12pm – 4pm",              location:"City Centre",     savings:"£8.95",          booking:false, hot:false },
-  { id:34, venue:"Mala",              deal:"Lunch dishes from £6",                                                               days:["monday","tuesday","wednesday","thursday","friday"],             category:"lunch",  time:"12pm – 3pm",              location:"City Centre",     savings:"From £6",        booking:false, hot:false },
-  { id:35, venue:"Nells",             deal:"14\" pizza for £7.77",                                                               days:["monday","tuesday","wednesday","thursday","friday"],             category:"lunch",  time:"12pm – 4pm",              location:"Northern Quarter",savings:"£7.77",          booking:false, hot:true  },
-  { id:36, venue:"Peaky Blinders",    deal:"£12 lunch and a pint or glass of wine",                                              days:["monday","tuesday","wednesday","thursday","friday"],             category:"lunch",  time:"Lunch",                   location:"City Centre",     savings:"£12 + drink",    booking:false, hot:false },
-  { id:37, venue:"Pho",               deal:"Crackers, main and a drink for £13.50",                                              days:["monday","tuesday","wednesday","thursday","friday"],             category:"lunch",  time:"12pm – 4pm",              location:"City Centre",     savings:"£13.50",         booking:false, hot:false },
-  { id:38, venue:"Shack",             deal:"Main, side and a drink for £10",                                                     days:["monday","tuesday","wednesday","thursday","friday"],             category:"lunch",  time:"12pm – 3pm",              location:"City Centre",     savings:"£10",            booking:false, hot:false },
-  { id:39, venue:"Shoryu",            deal:"2 courses and a drink for £20",                                                      days:["monday","tuesday","wednesday","thursday","friday"],             category:"lunch",  time:"12pm – 3pm",              location:"City Centre",     savings:"£20",            booking:false, hot:false },
-  { id:40, venue:"Shoryu",            deal:"Ramen for £10.99",                                                                   days:["monday","tuesday","wednesday","thursday","friday"],             category:"lunch",  time:"3pm – 5pm",               location:"City Centre",     savings:"£10.99",         booking:false, hot:false },
-  { id:41, venue:"Slug and Lettuce",  deal:"Lunch for £8",                                                                       days:["monday","tuesday","wednesday","thursday","friday"],             category:"lunch",  time:"12pm – 4pm",              location:"City Centre",     savings:"£8 lunch",       booking:false, hot:false },
-  { id:42, venue:"Smithfield Social", deal:"Burger, fries and a drink for £10",                                                  days:["monday","tuesday","wednesday","thursday","friday"],             category:"lunch",  time:"12pm – 6pm",              location:"Smithfield",      savings:"£10",            booking:false, hot:false },
-  { id:43, venue:"Turtle Bay",        deal:"£10 Lunch Deal",                                                                     days:["monday","tuesday","wednesday","thursday","friday"],             category:"lunch",  time:"Before 3pm",              location:"City Centre",     savings:"£10 lunch",      booking:false, hot:false },
-  { id:44, venue:"Yard and Coop",     deal:"Lunch and a soft drink for £8",                                                      days:["monday","tuesday","wednesday","thursday","friday"],             category:"lunch",  time:"12pm – 4pm",              location:"Church St",       savings:"£8",             booking:false, hot:false },
+{ v:"Boogalú", d:"25% off all food", s:"food", days:["monday"], t:"All day", sav:"25% off", hot:false },
+{ v:"Cane and Grain", d:"50% off food", s:"food", days:["monday"], t:"All day", sav:"50% off", hot:true },
+{ v:"Chakalaka", d:"50% off mains", s:"food", days:["monday","tuesday","wednesday"], t:"All day", sav:"50% off", hot:true },
+{ v:"Crafty Pig", d:"2-4-1 pizzas", s:"food", days:["monday"], t:"All day", sav:"241 pizza", hot:false },
+{ v:"Crafty Pig", d:"Tacos and a Margarita for £14.50", s:"food", days:["tuesday"], t:"11am–9pm", sav:"£14.50", hot:false },
+{ v:"Crafty Pig", d:"Wings for 40p each", s:"food", days:["wednesday"], t:"11am–9pm", sav:"40p wings 🔥", hot:true },
+{ v:"Crazy Pedro's", d:"Whole pizza £12.50 or pizza slices £3", s:"food", days:["monday","tuesday","wednesday","thursday","friday","sunday"], t:"5pm–10pm", sav:"From £3", hot:false },
+{ v:"Foundry Project", d:"Buy one get one free pizzas", s:"food", days:["monday"], t:"All day", sav:"BOGOF pizza", hot:false },
+{ v:"House of Fu", d:"All ramen and rice bowls £10", s:"food", days:["monday","tuesday","wednesday","thursday","friday"], t:"11:30am–5:30pm", sav:"Ramen £10", hot:false },
+{ v:"Pixel Bar", d:"16\" pizza for £15 (4pm–9pm) or a slice for £4 (Mon: from 2pm · Tue–Fri: from 12pm)", s:"food", days:["monday","tuesday","wednesday","thursday","friday"], t:"From 2/12pm", sav:"Pizza £15", hot:false },
+{ v:"Pen and Pencil", d:"50% off all food", s:"food", days:["monday"], t:"All day", sav:"50% off", hot:true },
+{ v:"Public", d:"£7 burgers, sandwiches & noodles", s:"food", days:["monday","tuesday","wednesday","thursday","friday"], t:"4:30pm–7pm", sav:"£7 mains", hot:false },
+{ v:"Public", d:"£7 burgers, sandwiches & noodles", s:"food", days:["sunday"], t:"All day", sav:"£7 mains", hot:false },
+{ v:"Purezza", d:"Pizza Dice Challenge — roll the dice and win up to 60% off your pizza. Click to view T&Cs and redeem.", s:"food", days:["monday","tuesday","wednesday","thursday","friday","sunday"], t:"Until 5pm", sav:"Up to 60% off", hot:true, redeem:"https://purezza.co.uk" },
+{ v:"Purezza", d:"Any 3 small dishes for £18. Click to view T&Cs and redeem.", s:"food", days:["monday","tuesday","wednesday","thursday","friday","sunday"], t:"Until 5pm", sav:"3 for £18", hot:false, redeem:"https://purezza.co.uk" },
+{ v:"Shack", d:"50% off all food — booking required", s:"food", days:["monday"], t:"All day", sav:"50% off", hot:true, book:true },
+{ v:"Shack", d:"2-4-1 burgers — booking required", s:"food", days:["tuesday"], t:"All day", sav:"241 burgers", hot:false, book:true },
+{ v:"Shoryu", d:"2 free bao buns when you order ramen or curry", s:"food", days:["monday"], t:"All day", sav:"Free bao buns", hot:false },
+{ v:"Slug and Lettuce", d:"Starter, main and a glass of wine for £23", s:"food", days:["monday","tuesday","wednesday","thursday","friday","sunday"], t:"5pm–9pm", sav:"Set menu £23", hot:false },
+{ v:"Smithfield Social", d:"Order a starter and main, and a second person gets the same for free", s:"food", days:["tuesday"], t:"All day", sav:"BOGOF meal", hot:true },
+{ v:"Turtle Bay", d:"2 courses for £17 or 3 courses for £20", s:"food", days:["monday","tuesday","wednesday","thursday","friday"], t:"Before 6:30pm", sav:"From £17", hot:false },
+{ v:"Wolf at The Door", d:"Food dishes £6 · Bao buns £2–£3", s:"food", days:["monday","tuesday","wednesday","thursday","friday","sunday"], t:"12pm–6pm", sav:"From £2", hot:false },
+{ v:"All Bar One", d:"2 courses from £18 · 3 courses from £22", s:"food", days:["monday","tuesday","wednesday","sunday"], t:"From 12pm", sav:"From £18", hot:false },
+{ v:"All Bar One", d:"4 tapas dishes + 2 cocktails (or Aperol Spritz or bottle of house wine) from £28.95", s:"food", days:["tuesday"], t:"From 4pm", sav:"From £28.95", hot:false },
+{ v:"Diecast", d:"40% off all food", s:"food", days:["wednesday"], t:"4pm–10pm", sav:"40% off", hot:true },
+{ v:"The Grosvenor", d:"2-4-1 pizzas", s:"food", days:["wednesday","sunday"], t:"All day", sav:"241 pizza", hot:false },
+{ v:"Evelyn's", d:"30% off dinner — booking required, use code DINNER30", s:"food", days:["tuesday"], t:"Dinner service", sav:"30% off", hot:false, book:true, redeem:"https://www.evelyns.co" },
+{ v:"Birria Brothers", d:"25% off all tacos", s:"food", days:["tuesday"], t:"All day", sav:"25% off", hot:false },
+{ v:"Madre", d:"£7 tacos and £7 churros", s:"food", days:["tuesday"], t:"All day", sav:"From £7", hot:false },
+{ v:"El Gato Negro", d:"Any 3 tapas plates for £20", s:"food", days:["monday","tuesday","wednesday","thursday","friday"], t:"12pm–5pm", sav:"3 for £20", hot:false },
+{ v:"El Gato Negro", d:"Any 3 tapas plates for £20 — available all day on Sundays", s:"food", days:["sunday"], t:"All day", sav:"3 for £20", hot:false },
+{ v:"BrewDog", d:"Buy one burger, get a second for just £1", s:"food", days:ALL_DAYS, t:"All day", sav:"BOGOF +£1", hot:false },
+{ v:"Franco Manca", d:"Sourdough pizza from £10.45 with student ID", s:"food", days:ALL_DAYS, t:"All day", sav:"From £10.45", hot:false, student:true },
+{ v:"All Bar One", d:"20% off all food with UNiDAYS student ID", s:"food", days:["sunday","monday","tuesday","wednesday"], t:"All day", sav:"20% off", hot:false, student:true },
 
-  // ── DRINKS ────────────────────────────────────────────────────────────────
-  { id:45, venue:"Affleck & Brown",   deal:"House Lager £4 · IPA £4.20 · House Wine £15 · Margaritas £6",                        days:["monday","tuesday","wednesday","thursday","friday","saturday","sunday"], category:"drinks", time:"12pm – 7pm",  location:"Northern Quarter",savings:"From £4",        booking:false, hot:false },
-  { id:46, venue:"All Bar One",       deal:"2 cocktails for £13",                                                                days:["monday","tuesday","wednesday","thursday","friday","sunday"],    category:"drinks", time:"12pm – close",             location:"City Centre",     savings:"2 for £13",      booking:false, hot:false },
-  { id:47, venue:"Cane and Grain",    deal:"2-for-1 cocktails at the Tiki bar",                                                  days:["friday"],                                                      category:"drinks", time:"8pm – 10pm",               location:"Northern Quarter",savings:"241 cocktails",  booking:false, hot:true  },
-  { id:48, venue:"Chakalaka",         deal:"2 cocktails for £11",                                                                days:["monday","tuesday","wednesday","thursday","sunday"],             category:"drinks", time:"Open – 7pm",               location:"City Centre",     savings:"2 for £11",      booking:false, hot:false },
-  { id:49, venue:"Chakalaka",         deal:"2 cocktails for £11 · Late session 10pm–midnight",                                   days:["friday","saturday"],                                           category:"drinks", time:"Open–7pm + 10pm–midnight", location:"City Centre",     savings:"2 for £11",      booking:false, hot:false },
-  { id:50, venue:"Crafty Pig",        deal:"Crafty Cocktails for £5",                                                            days:["thursday"],                                                    category:"drinks", time:"11am – 11pm",              location:"City Centre",     savings:"£5 cocktails",   booking:false, hot:true  },
-  { id:51, venue:"Crazy Pedro's",     deal:"2 cocktails for £12",                                                                days:["monday","tuesday","wednesday","thursday","friday","sunday"],    category:"drinks", time:"5pm – 10pm",               location:"Bridge St",       savings:"2 for £12",      booking:false, hot:false },
-  { id:52, venue:"Dog Town",          deal:"2-for-1 on all drinks",                                                              days:["wednesday"],                                                   category:"drinks", time:"10pm – close",             location:"City Centre",     savings:"241 drinks",     booking:false, hot:false },
-  { id:53, venue:"Evelyn's",          deal:"50% off all bottles of wine",                                                        days:["monday","tuesday","wednesday","thursday","friday"],             category:"drinks", time:"5pm – 7pm",                location:"City Centre",     savings:"50% off wine",   booking:false, hot:true  },
-  { id:54, venue:"Foundry Project",   deal:"2-for-1 cocktails",                                                                  days:["monday","tuesday","wednesday","thursday","friday"],             category:"drinks", time:"12pm – 7pm",               location:"City Centre",     savings:"241 cocktails",  booking:false, hot:false },
-  { id:55, venue:"Junior Jackson's",  deal:"2-for-1 on all drinks",                                                              days:["monday","tuesday","wednesday","thursday","friday","saturday","sunday"], category:"drinks", time:"3pm – 8pm",   location:"City Centre",     savings:"241 drinks",     booking:false, hot:false },
-  { id:56, venue:"Lost Cat",          deal:"£5 pints · £5 doubles · £5 cocktails — all day",                                    days:["monday"],                                                      category:"drinks", time:"All day",                  location:"Northern Quarter",savings:"Everything £5",  booking:false, hot:true  },
-  { id:57, venue:"Lost Cat",          deal:"2-for-1 on selected drinks",                                                         days:["tuesday","wednesday","thursday","friday","saturday","sunday"],  category:"drinks", time:"5pm – 9pm",                location:"Northern Quarter",savings:"241 drinks",     booking:false, hot:false },
-  { id:58, venue:"Madre",             deal:"Margaritas for £7",                                                                  days:["tuesday"],                                                     category:"drinks", time:"All day",                  location:"City Centre",     savings:"£7 Margs",       booking:false, hot:false },
-  { id:59, venue:"Mala",              deal:"Cocktails for £6",                                                                   days:["monday","tuesday","wednesday","thursday","friday"],             category:"drinks", time:"4pm – 7pm",                location:"City Centre",     savings:"£6 cocktails",   booking:false, hot:false },
-  { id:60, venue:"Nells",             deal:"Nell's Lager £4.50 · Cider £4.50 · House Pale £5 · Cocktails £6.50 · Wine bottles £19", days:["monday","tuesday","wednesday","thursday","sunday"], category:"drinks", time:"4pm – 7pm",                location:"Northern Quarter",savings:"From £4.50",     booking:false, hot:false },
-  { id:61, venue:"Nells",             deal:"Nell's Lager £4.50 · Cider £4.50 · House Pale £5 · Cocktails £6.50 · Wine bottles £19", days:["friday","saturday"],                                category:"drinks", time:"8pm – close",              location:"Northern Quarter",savings:"From £4.50",     booking:false, hot:false },
-  { id:62, venue:"Pen and Pencil",    deal:"2 cocktails for £12 · Amstel £4.50 · Prosecco bottle £20 · Wine bottle £17",         days:["monday","tuesday","wednesday","thursday","friday"],             category:"drinks", time:"4pm – 7pm",                location:"City Centre",     savings:"2 for £12",      booking:false, hot:false },
-  { id:63, venue:"Pixel Bar",         deal:"2 cocktails for £13",                                                                days:["monday","tuesday","wednesday","thursday","friday","saturday","sunday"], category:"drinks", time:"4pm – 10pm",  location:"City Centre",     savings:"2 for £13",      booking:false, hot:false },
-  { id:64, venue:"Public",            deal:"£4 pints · £4 wine · £6 classic cocktails",                                         days:["monday","tuesday","wednesday","thursday","friday"],             category:"drinks", time:"Open – 7pm",               location:"City Centre",     savings:"From £4",        booking:false, hot:false },
-  { id:65, venue:"Public",            deal:"£4 pints · £4 wine · £6 classic cocktails",                                         days:["sunday"],                                                      category:"drinks", time:"All day",                  location:"City Centre",     savings:"From £4",        booking:false, hot:false },
-  { id:66, venue:"Purezza",           deal:"2 cocktails for £12 or 2 mocktails for £10",                                         days:["monday","tuesday","wednesday","thursday","friday","sunday"],    category:"drinks", time:"Until 7pm",                location:"City Centre",     savings:"2 for £10–£12",  booking:false, hot:false },
-  { id:67, venue:"Purezza",           deal:"2 smoothies for £12",                                                                days:["monday","tuesday","wednesday","thursday","friday","sunday"],    category:"drinks", time:"Until 5pm",                location:"City Centre",     savings:"2 for £12",      booking:false, hot:false },
-  { id:68, venue:"Shack",             deal:"2 cocktails for £12 · Selected beers £4 · Prosecco £18",                             days:["monday","tuesday","wednesday","thursday","friday"],             category:"drinks", time:"4pm – 7pm",                location:"City Centre",     savings:"2 for £12",      booking:false, hot:false },
-  { id:69, venue:"Shoryu",            deal:"Cocktails for £8",                                                                   days:["monday","tuesday","wednesday","thursday","friday"],             category:"drinks", time:"4pm – 7pm",                location:"City Centre",     savings:"£8 cocktails",   booking:false, hot:false },
-  { id:70, venue:"Simmons Bar",       deal:"2-for-£10 Margaritas all night",                                                     days:["monday"],                                                      category:"drinks", time:"All night",                location:"City Centre",     savings:"2 for £10",      booking:false, hot:false },
-  { id:71, venue:"Simmons Bar",       deal:"Cocktail Teapots for £15",                                                           days:["tuesday"],                                                     category:"drinks", time:"All night",                location:"City Centre",     savings:"£15 teapots",    booking:false, hot:false },
-  { id:72, venue:"Smithfield Social", deal:"2 cocktails for £12 · Guinness £4 · Social Pilsner £4",                              days:["monday","tuesday","thursday","friday"],                         category:"drinks", time:"4pm – 7pm",                location:"Smithfield",      savings:"2 for £12",      booking:false, hot:false },
-  { id:73, venue:"Smithfield Social", deal:"50% off wine bottles + 2 cocktails for £12 · Guinness £4 · Pilsner £4",              days:["wednesday"],                                                   category:"drinks", time:"4pm – 7pm",                location:"Smithfield",      savings:"50% off wine",   booking:false, hot:true  },
-  { id:74, venue:"The Blues Kitchen", deal:"Margaritas for £6",                                                                  days:["monday"],                                                      category:"drinks", time:"5pm – 1am",                location:"City Centre",     savings:"£6 Margs",       booking:false, hot:false },
-  { id:75, venue:"The Blues Kitchen", deal:"Cocktails for £6",                                                                   days:["wednesday"],                                                   category:"drinks", time:"5pm – 1am",                location:"City Centre",     savings:"£6 cocktails",   booking:false, hot:false },
-  { id:76, venue:"The Grosvenor",     deal:"Half-price bottles of wine, prosecco and beers",                                     days:["thursday"],                                                    category:"drinks", time:"4pm – 7pm",                location:"City Centre",     savings:"50% off bottles", booking:false, hot:true },
-  { id:77, venue:"Turtle Bay",        deal:"2-for-1 cocktails",                                                                  days:["monday","tuesday","wednesday","thursday","friday","saturday","sunday"], category:"drinks", time:"12pm–7pm + 9pm–close", location:"City Centre",  savings:"241 cocktails",  booking:false, hot:true  },
-  { id:78, venue:"Wilson's Social",   deal:"Stella Unfiltered £5 · Neck Oil £5.50 · Margaritas & Daiquiris £7 · Prosecco £20",   days:["monday","tuesday","thursday","friday","saturday","sunday"],     category:"drinks", time:"4pm – 7pm",                location:"City Centre",     savings:"From £5",        booking:false, hot:false },
-  { id:79, venue:"Wolf at the Door",  deal:"Pints for £3.50 · Martinis for £5",                                                  days:["monday","tuesday","wednesday","thursday","friday","sunday"],    category:"drinks", time:"3pm – 7pm",                location:"Northern Quarter",savings:"£3.50 pints",   booking:false, hot:false },
-  { id:80, venue:"Yard and Coop",     deal:"Cocktails £6 · Pints £4.50",                                                        days:["saturday","sunday"],                                           category:"drinks", time:"8:30pm – 10:30pm",         location:"Church St",       savings:"£6 cocktails",   booking:false, hot:false },
-  { id:81, venue:"7 Sins",            deal:"2 cocktails for £12 · Pints £4 · House wine £4.50",                                  days:["monday","tuesday","thursday","friday","saturday","sunday"],     category:"drinks", time:"12pm – 7pm",               location:"City Centre",     savings:"2 for £12",      booking:false, hot:false },
-  { id:82, venue:"33",                deal:"2 cocktails for £10",                                                                days:["monday","tuesday","thursday","friday","saturday","sunday"],     category:"drinks", time:"All day",                  location:"City Centre",     savings:"2 for £10",      booking:false, hot:true  },
-];
+// ════════════ LUNCH ════════════
 
-// =============================================================================
-// APP STATE
-// =============================================================================
-const DAY_NAMES = ["sunday","monday","tuesday","wednesday","thursday","friday","saturday"];
-const TODAY     = DAY_NAMES[new Date().getDay()];
-const CAT_LABEL = { food:"Food", lunch:"Lunch", drinks:"Drinks", nightlife:"Nightlife", entertainment:"Entertainment" };
-const CAT_EMOJI = { food:"🍕", lunch:"🥗", drinks:"🍹", nightlife:"🎉", entertainment:"🎯" };
+{ v:"All Bar One", d:"Lunch dish and a drink for £12.50", s:"lunch", days:["monday","tuesday","wednesday","thursday","friday"], t:"12pm–5pm", sav:"£12.50", hot:false },
+{ v:"Bab", d:"£10 lunch", s:"lunch", days:["monday","tuesday","wednesday","thursday","friday"], t:"12pm–3pm", sav:"£10", hot:false },
+{ v:"Foundry Project", d:"Selected dishes for £8.95", s:"lunch", days:["monday","tuesday","wednesday","thursday","friday"], t:"12pm–4pm", sav:"£8.95", hot:false },
+{ v:"Mala", d:"Lunch dishes for £6", s:"lunch", days:["monday","tuesday","wednesday","thursday","friday"], t:"12pm–3pm", sav:"£6 lunch", hot:false },
+{ v:"Nells", d:"14\" NYC-style pizza for £7.77", s:"lunch", days:["monday","tuesday","wednesday","thursday","friday"], t:"12pm–4pm", sav:"£7.77", hot:false },
+{ v:"Pho", d:"Crackers, a main and a drink for £13.50", s:"lunch", days:["monday","tuesday","wednesday","thursday","friday"], t:"12pm–4pm", sav:"£13.50 set", hot:false },
+{ v:"Shack", d:"Main, side and a drink for £10", s:"lunch", days:["monday","tuesday","wednesday","thursday","friday"], t:"12pm–3pm", sav:"£10", hot:false },
+{ v:"Shoryu", d:"2 courses and a drink for £20", s:"lunch", days:["monday","tuesday","wednesday","thursday","friday"], t:"12pm–3pm", sav:"£20 set", hot:false },
+{ v:"Shoryu", d:"Ramen for £10.99", s:"lunch", days:["monday","tuesday","thursday","friday"], t:"3pm–5pm", sav:"£10.99", hot:false },
+{ v:"Slug and Lettuce", d:"Lunch for £8", s:"lunch", days:["monday","tuesday","wednesday","thursday","friday"], t:"12pm–4pm", sav:"£8 lunch", hot:false },
+{ v:"Smithfield Social", d:"Burger, fries and a drink for £10", s:"lunch", days:["monday","tuesday","wednesday","thursday","friday"], t:"12pm–6pm", sav:"£10 deal", hot:false },
+{ v:"Turtle Bay", d:"£10 lunch deal", s:"lunch", days:["monday","tuesday","wednesday","thursday","friday"], t:"Before 3pm", sav:"£10", hot:false },
+{ v:"Yard and Coop", d:"Lunch and a soft drink for £8", s:"lunch", days:["monday","tuesday","wednesday","thursday","friday"], t:"12pm–4pm", sav:"£8", hot:false },
 
-let activeDay     = TODAY;
-let activeCat     = "all";
-let searchQuery   = "";
-let isSearchMode  = false;
+// ════════════ DRINKS ════════════
 
-const $  = id  => document.getElementById(id);
-const $$ = sel => document.querySelectorAll(sel);
+{ v:"Affleck & Brown", d:"House Lager £4 · House IPA £4.20 · House Wine £15 · Margaritas £6", s:"drinks", days:ALL_DAYS, t:"12pm–7pm", sav:"From £4", hot:false },
+{ v:"All Bar One", d:"2 cocktails for £13", s:"drinks", days:ALL_DAYS, t:"12pm–close", sav:"2 for £13", hot:false },
+{ v:"Chakalaka", d:"2 for £11 cocktails (Fri & Sat extended: also 10pm–12am)", s:"drinks", days:ALL_DAYS, t:"Open–7pm", sav:"2 for £11", hot:false },
+{ v:"Crazy Pedro's", d:"2 cocktails for £12", s:"drinks", days:["monday","tuesday","wednesday","thursday","friday","sunday"], t:"5pm–10pm", sav:"2 for £12", hot:false },
+{ v:"Evelyn's", d:"50% off bottles of wine", s:"drinks", days:["monday","tuesday","wednesday","thursday","friday"], t:"5pm–7pm", sav:"50% off wine", hot:false },
+{ v:"Foundry Project", d:"2-4-1 cocktails", s:"drinks", days:["monday","tuesday","wednesday","thursday","friday"], t:"12pm–7pm", sav:"241 cocktails", hot:false },
+{ v:"Junior Jackson's", d:"2-4-1 drinks", s:"drinks", days:ALL_DAYS, t:"3pm–8pm", sav:"241 drinks", hot:false },
+{ v:"Lost Cat", d:"£5 pints · £5 doubles · £5 cocktails", s:"drinks", days:["monday"], t:"All day", sav:"£5 everything", hot:true },
+{ v:"Lost Cat", d:"2-4-1 on selected drinks", s:"drinks", days:["tuesday","wednesday","thursday","friday","saturday","sunday"], t:"5pm–9pm", sav:"241 drinks", hot:false },
+{ v:"Mala", d:"Cocktails for £6", s:"drinks", days:["monday","tuesday","wednesday","thursday","friday"], t:"4pm–7pm", sav:"£6 cocktails", hot:false },
+{ v:"Nells", d:"£4.50 Nell's Lager/House Cider/Schofferhofer · £5 Veltins/House Pale/Lucky Saint · £6.50 Cocktails · £19 House Wine Bottles", s:"drinks", days:["monday","tuesday","wednesday","thursday"], t:"4pm–7pm", sav:"From £4.50", hot:false },
+{ v:"Nells", d:"£4.50 Nell's Lager/House Cider/Schofferhofer · £5 Veltins/House Pale/Lucky Saint · £6.50 Cocktails · £19 House Wine Bottles", s:"drinks", days:["friday","saturday","sunday"], t:"8pm–close", sav:"From £4.50", hot:false },
+{ v:"Pen and Pencil", d:"2 for £12 cocktails · Amstel £4.50 · Bottles of Prosecco £20 · House Wine £17", s:"drinks", days:["monday","tuesday","wednesday","thursday","friday"], t:"4pm–7pm", sav:"2 for £12", hot:false },
+{ v:"Pixel Bar", d:"2 cocktails for £13", s:"drinks", days:ALL_DAYS, t:"4pm–10pm", sav:"2 for £13", hot:false },
+{ v:"Public", d:"£4 pints · £4 glasses of wine · £6 classic cocktails", s:"drinks", days:["monday","tuesday","wednesday","thursday","friday"], t:"Open–7pm", sav:"From £4", hot:false },
+{ v:"Public", d:"£4 pints · £4 glasses of wine · £6 classic cocktails", s:"drinks", days:["sunday"], t:"All day", sav:"From £4", hot:false },
+{ v:"Purezza", d:"2 cocktails for £12 or 2 mocktails for £10. Click to view T&Cs and redeem.", s:"drinks", days:["monday","tuesday","wednesday","thursday","friday","sunday"], t:"Until 7pm", sav:"2 for £12/£10", hot:false, redeem:"https://purezza.co.uk" },
+{ v:"Purezza", d:"2 smoothies for £12. Click to view T&Cs and redeem.", s:"drinks", days:["monday","tuesday","wednesday","thursday","friday","sunday"], t:"Until 5pm", sav:"2 for £12", hot:false, redeem:"https://purezza.co.uk" },
+{ v:"Shack", d:"2 for £12 cocktails · Selected beers £4 · Prosecco £18", s:"drinks", days:["monday","tuesday","wednesday","thursday","friday"], t:"4pm–7pm", sav:"2 for £12", hot:false },
+{ v:"Shoryu", d:"Cocktails for £8", s:"drinks", days:["monday","tuesday","wednesday","thursday","friday"], t:"4pm–7pm", sav:"£8 cocktails", hot:false },
+{ v:"Simmons Bar", d:"2-for-£10 margaritas all night", s:"drinks", days:["monday"], t:"All night", sav:"2 for £10", hot:false },
+{ v:"Simmons Bar", d:"£15 cocktail teapots all night", s:"drinks", days:["tuesday"], t:"All night", sav:"£15 teapots", hot:false },
+{ v:"Smithfield Social", d:"2 cocktails for £12 · Guinness £4 · Social Pilsner £4", s:"drinks", days:["monday","tuesday","thursday","friday"], t:"4pm–7pm", sav:"2 for £12", hot:false },
+{ v:"Smithfield Social", d:"50% off bottles of wine (excl. sparkling) · 2 cocktails for £12 · Guinness £4 · Social Pilsner £4", s:"drinks", days:["wednesday"], t:"4pm–7pm", sav:"50% off wine", hot:true },
+{ v:"The Blues Kitchen", d:"Margaritas for £6", s:"drinks", days:["monday"], t:"5pm–1am", sav:"£6 margaritas", hot:false },
+{ v:"The Blues Kitchen", d:"Cocktails for £6", s:"drinks", days:["wednesday"], t:"5pm–1am", sav:"£6 cocktails", hot:false },
+{ v:"Turtle Bay", d:"2-4-1 cocktails — happy hour and again late night", s:"drinks", days:ALL_DAYS, t:"12pm–7pm & 9pm–close", sav:"241 cocktails", hot:false },
+{ v:"Wilson's Social", d:"Stella Unfiltered £5 · Beavertown Neck Oil £5.50 · Margaritas & Daiquiris £7 · Prosecco £20", s:"drinks", days:ALL_DAYS, t:"4pm–7pm", sav:"From £5", hot:false },
+{ v:"Wolf at The Door", d:"Pints £3.50 · Martinis £5", s:"drinks", days:["monday","tuesday","wednesday","thursday","friday","sunday"], t:"3pm–7pm", sav:"From £3.50", hot:false },
+{ v:"33", d:"2 cocktails for £10", s:"drinks", days:ALL_DAYS, t:"All day", sav:"2 for £10", hot:false },
+{ v:"Cane and Grain", d:"2-4-1 cocktails at the tiki bar", s:"drinks", days:["friday"], t:"8pm–10pm", sav:"241 cocktails", hot:false },
+{ v:"Dogtown", d:"2-4-1 drinks", s:"drinks", days:["wednesday"], t:"10pm–close", sav:"241 drinks", hot:false },
+{ v:"Crafty Pig", d:"Crafty cocktails for £5", s:"drinks", days:["thursday"], t:"11am–11pm", sav:"£5 cocktails", hot:false },
+{ v:"The Grosvenor", d:"Half price bottles of wine, prosecco and beers", s:"drinks", days:["thursday"], t:"4pm–7pm", sav:"50% off bottles", hot:false },
+{ v:"Yard and Coop", d:"Cocktails £6 · Pints £4.50", s:"drinks", days:["saturday","sunday"], t:"8:30pm–10:30pm", sav:"From £4.50", hot:false },
+{ v:"Madre", d:"£7 margaritas", s:"drinks", days:["tuesday"], t:"All day", sav:"£7 margaritas", hot:false },
+{ v:"Lion's Den", d:"£3.50 pints · Any 2 spirits for £6", s:"drinks", days:["thursday","friday","saturday"], t:"All day", sav:"2 spirits £6", hot:false, student:true },
+{ v:"Junkyard Golf", d:"£6 cocktails · £4 pints · £3.50 mocktails", s:"drinks", days:ALL_DAYS, t:"All day", sav:"From £3.50", hot:false },
 
-// =============================================================================
-// FILTER
-// =============================================================================
+// ════════════ NIGHTLIFE ════════════
+
+{ v:"Factory", d:"Quids In Monday — FREE entry all night + £1 drinks across all 3 floors (House / R&B / Hip-Hop)", s:"nightlife", days:["monday"], t:"From 10pm", sav:"Free + £1 drinks", hot:true },
+{ v:"Cargo", d:"Monday Madness — £3 student entry, cheap drinks all night. Capacity 3,000.", s:"nightlife", days:["monday"], t:"From 10pm", sav:"£3 entry", hot:true, student:true },
+{ v:"Factory", d:"Rewind Tuesdays — FREE entry across all 3 floors (Commercial House / R&B / Cheese Pop)", s:"nightlife", days:["tuesday"], t:"From 10pm", sav:"Free entry", hot:true },
+{ v:"Factory", d:"Toxic Wednesdays — FREE entry + £1 drinks across all 3 floors", s:"nightlife", days:["wednesday"], t:"From 10pm", sav:"Free + £1 drinks", hot:true },
+
+// ════════════ ENTERTAINMENT ════════════
+
+{ v:"Junkyard Golf", d:"50% off 9-hole mini golf tickets all day, plus student happy hour with £6 cocktails and £4 pints", s:"entertainment", days:["monday","tuesday","wednesday","thursday"], t:"All day", sav:"50% off golf", hot:false, student:true },
+
+// ════════════ BOTTOMLESS BRUNCH ════════════
+
+{ v:"All Bar One", d:"Brunch dish + unlimited Prosecco, Hugo Spritz, Aperol Spritz, Bacardi Daiquiri, Tanqueray G&T or Peroni", s:"brunch", days:ALL_DAYS, t:"All day — booking required", sav:"£34pp", hot:false, book:true, bookLink:"https://www.allbarone.co.uk", dur:"90 mins" },
+{ v:"Diecast", d:"Any whole pizza + unlimited Frozen Daiquiris, Prosecco or Pilsner", s:"brunch", days:["saturday"], t:"12pm–5pm — booking required", sav:"£35pp", hot:false, book:true, bookLink:"https://diecastmcr.com", dur:"90 mins" },
+{ v:"Pen and Pencil", d:"Unlimited food and drink brunch — last Saturday of every month only. To book, call 0161 660 3303 or email info@thepenandpencilnq.co.uk", s:"brunch", days:["saturday"], t:"1pm–6pm (last Sat of month)", sav:"£50pp", hot:false, book:true, bookLink:"https://thepenandpencilnq.co.uk", dur:"3 hours" },
+{ v:"Prezzo", d:"Pizza or pasta + unlimited cocktails, prosecco or beer. Sun–Thu all day · Fri–Sat until 5pm (last booking 3pm)", s:"brunch", days:ALL_DAYS, t:"Sun–Thu all day / Fri–Sat until 5pm", sav:"£35pp", hot:false, book:true, bookLink:"https://www.prezzorestaurants.co.uk", dur:"2 hours" },
+{ v:"Ramona", d:"Any pizza slice + bottomless Frozen Margaritas, Ramona Pilsner or Prosecco — select 'bottomless' when booking", s:"brunch", days:["saturday"], t:"12pm–5pm — booking required", sav:"£29pp", hot:true, book:true, bookLink:"https://ramonamanchester.co.uk", dur:"2 hours" },
+{ v:"Slug and Lettuce", d:"Food + unlimited cocktails, prosecco, beers and spirits (Sat slightly higher at £35.95pp)", s:"brunch", days:ALL_DAYS, t:"All day — booking required", sav:"£33.95–35.95pp", hot:false, book:true, bookLink:"https://www.slugandlettuce.co.uk", dur:"2 hours" },
+{ v:"The Beeswing", d:"Any 2 dishes + unlimited red/white wine, prosecco, Estrella, mimosas or margaritas", s:"brunch", days:["wednesday","thursday","friday","saturday","sunday"], t:"12:30pm–4pm — booking required", sav:"£35pp", hot:false, book:true, bookLink:"https://www.beeswingwine.co.uk", dur:"90 mins" },
+{ v:"The Firehouse", d:"Food + unlimited Frozen Margaritas, Firehouse Pilsner or Prosecco — select 'Bottomless' when booking", s:"brunch", days:["friday","saturday"], t:"4pm–9pm — booking required", sav:"£29pp", hot:true, book:true, bookLink:"https://ramonamanchester.co.uk", dur:"90 mins" },
+{ v:"Wilson's Social", d:"Brunch dish + bottomless beer, prosecco, wine, mimosas, bellinis and soft drinks — book via their website", s:"brunch", days:["saturday","sunday"], t:"Booking required", sav:"£35pp", hot:false, book:true, bookLink:"https://wilsonssocial.co.uk", dur:"2 hours" },
+
+]; // end deals array
+
+// ─────────────────────────────────────────────
+// STATE
+// ─────────────────────────────────────────────
+const dayNames = ["sunday","monday","tuesday","wednesday","thursday","friday","saturday"];
+const today = dayNames[new Date().getDay()];
+
+let activeDay = today;
+let activeSub = "all";
+let searchQuery = "";
+let searchMode = false;
+
+const subOrder = { food:1, lunch:2, drinks:3, nightlife:4, entertainment:5, brunch:6 };
+
+// ─────────────────────────────────────────────
+// FILTER & SORT
+// ─────────────────────────────────────────────
 function getFiltered() {
-  if (isSearchMode && searchQuery) {
-    const q = searchQuery.toLowerCase();
-    return deals.filter(d =>
-      (activeCat === "all" || d.category === activeCat) &&
-      (d.venue.toLowerCase().includes(q) ||
-       d.deal.toLowerCase().includes(q)  ||
-       d.location.toLowerCase().includes(q))
-    );
-  }
-  return deals.filter(d =>
-    d.days.includes(activeDay) &&
-    (activeCat === "all" || d.category === activeCat)
-  );
+  return deals
+    .filter(d => {
+      const dayOk = searchMode ? true : d.days.includes(activeDay);
+      const subOk = activeSub === "all" || d.s === activeSub;
+      const termOk = !searchQuery ||
+        d.v.toLowerCase().includes(searchQuery) ||
+        d.d.toLowerCase().includes(searchQuery) ||
+        (V[d.v] && V[d.v].loc && V[d.v].loc.toLowerCase().includes(searchQuery)) ||
+        d.s.toLowerCase().includes(searchQuery);
+      return dayOk && subOk && termOk;
+    })
+    .sort((a, b) => {
+      // Hot deals first within the same sub
+      if (subOrder[a.s] !== subOrder[b.s]) return subOrder[a.s] - subOrder[b.s];
+      if (a.hot !== b.hot) return a.hot ? -1 : 1;
+      return a.v.localeCompare(b.v);
+    });
 }
 
-// =============================================================================
-// RENDER
-// =============================================================================
-function render() {
-  const list  = getFiltered();
-  const grid  = $("dealsGrid");
-  const empty = $("noResults");
+// ─────────────────────────────────────────────
+// RENDER CARDS
+// ─────────────────────────────────────────────
+const subLabel = { food:"🍕 Food", lunch:"🍱 Lunch", drinks:"🍹 Drinks", brunch:"🥂 Bottomless Brunch", nightlife:"🎉 Nightlife", entertainment:"🎯 Entertainment" };
+
+function renderCards() {
+  const list = getFiltered();
+  const grid = document.getElementById("dealsGrid");
+  const noRes = document.getElementById("noResults");
 
   grid.innerHTML = "";
-  $("totalDeals").textContent = deals.filter(d => d.days.includes(TODAY)).length;
 
   if (list.length === 0) {
-    empty.classList.add("show");
-    $("resultsCount").textContent = "";
-    if (isSearchMode) {
-      $("noResultsMsg").textContent = `No deals found for "${searchQuery}" — try a different search.`;
-    } else {
-      $("noResultsMsg").textContent = "No deals found — try a different day or category!";
-    }
+    noRes.classList.add("show");
+    document.getElementById("resultsCount").textContent = "";
     return;
   }
-
-  empty.classList.remove("show");
-  $("resultsCount").textContent = `${list.length} deal${list.length !== 1 ? "s" : ""}`;
+  noRes.classList.remove("show");
+  document.getElementById("resultsCount").textContent = `${list.length} deal${list.length !== 1 ? "s" : ""} shown`;
 
   list.forEach(d => {
-    const url = getVenueUrl(d.venue);
-    const el  = document.createElement("a");
-    el.className  = "deal-card";
-    el.href       = url;
-    el.target     = "_blank";
-    el.rel        = "noopener noreferrer";
-    el.title      = `Visit ${d.venue}`;
-    el.innerHTML  = `
+    const venue = V[d.v] || {};
+    const loc = venue.loc || "";
+    const ls = locStyle(loc);
+    const isBrunch = d.s === "brunch";
+    const card = document.createElement("div");
+    card.className = "deal-card" + (isBrunch ? " brunch-card" : "");
+
+    const venueName = venue.w
+      ? `<a href="${venue.w}" target="_blank" rel="noopener">${d.v}</a>`
+      : d.v;
+
+    const dayPills = searchMode
+      ? d.days.map(day => `<span class="tag">${day.charAt(0).toUpperCase()+day.slice(1)}</span>`).join("")
+      : "";
+
+    const brunchSection = isBrunch ? `
+      <div class="brunch-price">${d.sav}</div>
+      <div class="brunch-dur">⏱ ${d.dur || ""}</div>
+    ` : "";
+
+    const redeemBtn = d.redeem
+      ? `<a class="tag tag-redeem" href="${d.redeem}" target="_blank" rel="noopener">Redeem / T&amp;Cs →</a>`
+      : "";
+
+    const bookBtn = (isBrunch && d.bookLink)
+      ? `<a class="book-btn" href="${d.bookLink}" target="_blank" rel="noopener">Book Now →</a>`
+      : (d.book ? `<span class="tag tag-booking">📋 Booking required</span>` : "");
+
+    const studentBadge = d.student ? `<span class="tag tag-student">🎓 Student</span>` : "";
+
+    card.innerHTML = `
       ${d.hot ? '<span class="hot-flag">🔥 Hot</span>' : ""}
-      <div class="card-strip strip-${d.category}"></div>
+      <div class="card-stripe stripe-${d.s}"></div>
       <div class="card-body">
-        <div class="card-top">
-          <span class="card-cat c-${d.category}">${CAT_EMOJI[d.category]||""} ${CAT_LABEL[d.category]||d.category}</span>
-          <span class="savings-badge">${d.savings}</span>
+        <div class="card-row1">
+          <span class="sub-chip chip-${d.s}">${subLabel[d.s] || d.s}</span>
+          <span class="sav-badge">${d.sav}</span>
         </div>
-        <div class="card-venue">${d.venue}</div>
-        <div class="card-deal">${d.deal}</div>
-        <div class="card-pills">
-          <span class="pill">🕐 ${d.time}</span>
-          ${d.days.map(day => `<span class="pill">${day[0].toUpperCase()+day.slice(1)}</span>`).join("")}
+        <div class="card-venue">${venueName}</div>
+        ${brunchSection}
+        <div class="card-deal">${d.d}</div>
+        <div class="card-tags">
+          ${studentBadge}
+          ${!isBrunch && d.book ? `<span class="tag tag-booking">📋 Booking required</span>` : ""}
+          ${!isBrunch ? redeemBtn : ""}
+          ${searchMode ? dayPills : ""}
         </div>
       </div>
       <div class="card-footer">
-        <span class="card-loc">📍 ${d.location}</span>
-        <span class="visit-link">Visit site →</span>
-        ${d.booking ? '<span class="booking-tag">📅 Book required</span>' : ""}
-      </div>`;
-    grid.appendChild(el);
+        ${loc ? `<span class="loc-chip" style="background:${ls.bg};color:${ls.color}">📍 ${loc}</span>` : "<span></span>"}
+        <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap">
+          ${isBrunch ? (d.bookLink ? `<a class="book-btn" href="${d.bookLink}" target="_blank" rel="noopener">Book now →</a>` : "") : ""}
+          <span class="time-note">🕐 ${d.t}</span>
+        </div>
+      </div>
+    `;
+    grid.appendChild(card);
   });
 }
 
-// =============================================================================
-// TITLE
-// =============================================================================
-function updateTitle() {
-  if (isSearchMode && searchQuery) {
-    $("resultsTitle").textContent = `Results for "${searchQuery}"`;
+// ─────────────────────────────────────────────
+// UPDATE COUNTS & TITLE
+// ─────────────────────────────────────────────
+function updateDayCounts() {
+  ALL_DAYS.forEach(day => {
+    const cnt = deals.filter(d => d.days.includes(day)).length;
+    const el = document.getElementById("cnt-" + day);
+    if (el) el.textContent = cnt + " deals";
+  });
+}
+
+function updateResultsTitle() {
+  const el = document.getElementById("resultsTitle");
+  if (searchMode) {
+    el.textContent = `Search results`;
     return;
   }
-  const label = activeDay[0].toUpperCase() + activeDay.slice(1);
-  $("resultsTitle").textContent = activeDay === TODAY
-    ? `Today's Deals (${label})`
-    : `${label} Deals`;
+  const dayLabel = activeDay.charAt(0).toUpperCase() + activeDay.slice(1);
+  el.textContent = activeDay === today ? `Today (${dayLabel})` : `${dayLabel}`;
 }
 
-// =============================================================================
-// SEARCH
-// =============================================================================
-function setupSearch() {
-  const input = $("searchInput");
-  const icon  = $("searchIcon");
-  const clear = $("searchClear");
-  const nav   = $("dayNav");
+function updateStatsBar() {
+  const tc = deals.filter(d => d.days.includes(today)).length;
+  document.getElementById("todayCount").textContent = tc;
+  document.getElementById("totalCount").textContent = deals.length;
+}
 
-  input.addEventListener("input", () => {
-    searchQuery = input.value.trim();
-    if (searchQuery) {
-      isSearchMode = true;
-      nav.classList.add("searching");
-      icon.classList.add("hide");
-      clear.classList.add("show");
-    } else {
-      clearSearch();
-      return;
-    }
-    updateTitle();
-    render();
-  });
+// ─────────────────────────────────────────────
+// SEARCH MODE
+// ─────────────────────────────────────────────
+function setSearchMode(on) {
+  searchMode = on;
+  const bar = document.getElementById("searchBar");
+  const hint = document.getElementById("searchBarText");
+  if (on) {
+    bar.classList.add("show");
+    hint.textContent = `Showing results across all days for "${searchQuery}"`;
+    document.querySelectorAll(".day-btn").forEach(b => b.classList.remove("active"));
+  } else {
+    bar.classList.remove("show");
+    const btn = document.querySelector(`.day-btn[data-day="${activeDay}"]`);
+    if (btn) btn.classList.add("active");
+  }
 }
 
 function clearSearch() {
-  searchQuery  = "";
-  isSearchMode = false;
-  $("searchInput").value = "";
-  $("searchIcon").classList.remove("hide");
-  $("searchClear").classList.remove("show");
-  $("dayNav").classList.remove("searching");
-  // re-activate today's button
-  $$(".day-btn").forEach(b => b.classList.remove("active"));
-  const todayBtn = document.querySelector(`[data-day="${TODAY}"]`);
-  if (todayBtn) todayBtn.classList.add("active");
-  activeDay = TODAY;
-  updateTitle();
-  render();
+  searchQuery = "";
+  document.getElementById("searchInput").value = "";
+  setSearchMode(false);
+  updateResultsTitle();
+  renderCards();
 }
 
-// =============================================================================
-// DAY NAV
-// =============================================================================
-function setupDays() {
-  $$(".day-btn").forEach(btn => {
-    const day   = btn.dataset.day;
-    const count = deals.filter(d => d.days.includes(day)).length;
-    btn.querySelector(".day-count").textContent = `${count} deal${count !== 1 ? "s" : ""}`;
-    if (day === TODAY) btn.classList.add("is-today");
-
+// ─────────────────────────────────────────────
+// SETUP INTERACTIONS
+// ─────────────────────────────────────────────
+function setup() {
+  // Day nav
+  document.querySelectorAll(".day-btn").forEach(btn => {
+    const day = btn.dataset.day;
+    if (day === today) btn.classList.add("today-marker");
     btn.addEventListener("click", () => {
-      // clicking a day clears search
-      if (isSearchMode) clearSearch();
-      $$(".day-btn").forEach(b => b.classList.remove("active"));
-      btn.classList.add("active");
+      if (searchMode) clearSearch();
       activeDay = day;
-      updateTitle();
-      render();
-    });
-  });
-}
-
-// =============================================================================
-// CATEGORY FILTERS
-// =============================================================================
-function setupCats() {
-  $$(".cat-btn").forEach(btn => {
-    btn.addEventListener("click", () => {
-      $$(".cat-btn").forEach(b => b.classList.remove("active"));
+      document.querySelectorAll(".day-btn").forEach(b => b.classList.remove("active"));
       btn.classList.add("active");
-      activeCat = btn.dataset.cat;
-      render();
+      updateResultsTitle();
+      renderCards();
     });
   });
-}
 
-// =============================================================================
-// CHECKBOX TOGGLE STYLING
-// =============================================================================
-function setupCheckboxes() {
-  $$(".day-check").forEach(label => {
-    label.addEventListener("change", () => {
-      const cb = label.querySelector("input");
-      label.classList.toggle("checked", cb.checked);
-    });
-  });
-}
-
-// =============================================================================
-// SUBMIT DEAL
-// =============================================================================
-function submitDeal() {
-  const venue   = $("f-venue").value.trim();
-  const cat     = $("f-cat").value;
-  const dealTxt = $("f-deal").value.trim();
-  const time    = $("f-time").value.trim();
-  const loc     = $("f-loc").value.trim();
-  const email   = $("f-email").value.trim();
-  const days    = [...$$(".day-check input:checked")].map(c => c.value).join(", ");
-
-  if (!venue || !dealTxt) {
-    alert("Please fill in at least the venue name and deal description.");
-    return;
-  }
-
-  const body =
-    `Venue: ${venue}\n` +
-    `Category: ${cat || "not specified"}\n` +
-    `Deal: ${dealTxt}\n` +
-    `Time: ${time || "not specified"}\n` +
-    `Location: ${loc || "not specified"}\n` +
-    `Days: ${days || "not specified"}\n` +
-    (email ? `\nReply to: ${email}` : "");
-
-  window.open(
-    `mailto:${_c}?subject=${encodeURIComponent("Deal Submission: " + venue)}&body=${encodeURIComponent(body)}`,
-    "_blank"
-  );
-
-  $("submitSuccess").classList.add("show");
-  clearForm();
-}
-
-function clearForm() {
-  ["f-venue","f-cat","f-deal","f-time","f-loc","f-email"].forEach(id => {
-    const el = $(id);
-    if (el) el.value = "";
-  });
-  $$(".day-check input").forEach(cb => { cb.checked = false; });
-  $$(".day-check").forEach(l => l.classList.remove("checked"));
-}
-
-// =============================================================================
-// BUSINESS ENQUIRY FORM
-// =============================================================================
-function submitBiz() {
-  const venue = $("b-venue").value.trim();
-  const name  = $("b-name").value.trim();
-  const email = $("b-email").value.trim();
-  const phone = $("b-phone").value.trim();
-  const msg   = $("b-msg").value.trim();
-
-  if (!venue || !name || !email) {
-    alert("Please fill in your venue name, your name, and email address.");
-    return;
-  }
-
-  const body =
-    `Venue: ${venue}\n` +
-    `Contact name: ${name}\n` +
-    `Their email: ${email}\n` +
-    `Phone: ${phone || "not provided"}\n` +
-    `\nMessage:\n${msg || "no message"}`;
-
-  window.open(
-    `mailto:${_c}?subject=${encodeURIComponent("Business Enquiry: " + venue)}&body=${encodeURIComponent(body)}`,
-    "_blank"
-  );
-
-  $("bizSuccess").classList.add("show");
-  ["b-venue","b-name","b-email","b-phone","b-msg"].forEach(id => { $(id).value = ""; });
-}
-
-// =============================================================================
-// INIT
-// =============================================================================
-(function init() {
-  setupDays();
-  setupCats();
-  setupSearch();
-  setupCheckboxes();
-  const todayBtn = document.querySelector(`[data-day="${TODAY}"]`);
+  // Set today active
+  const todayBtn = document.querySelector(`.day-btn[data-day="${today}"]`);
   if (todayBtn) todayBtn.classList.add("active");
-  updateTitle();
-  render();
+
+  // Subcategory filter
+  document.querySelectorAll(".sub-btn").forEach(btn => {
+    btn.addEventListener("click", () => {
+      activeSub = btn.dataset.sub;
+      document.querySelectorAll(".sub-btn").forEach(b => b.classList.remove("active"));
+      btn.classList.add("active");
+      renderCards();
+    });
+  });
+
+  // Search
+  document.getElementById("searchInput").addEventListener("input", e => {
+    searchQuery = e.target.value.toLowerCase().trim();
+    if (searchQuery) {
+      setSearchMode(true);
+    } else {
+      setSearchMode(false);
+    }
+    updateResultsTitle();
+    renderCards();
+  });
+}
+
+// ─────────────────────────────────────────────
+// INIT
+// ─────────────────────────────────────────────
+(function init() {
+  updateDayCounts();
+  updateStatsBar();
+  setup();
+  updateResultsTitle();
+  renderCards();
 })();
 </script>
 </body>
