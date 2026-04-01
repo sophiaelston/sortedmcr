@@ -32,6 +32,7 @@
     }
   }
   </script>
+  <script type="text/javascript" src="https://s.skimresources.com/js/300867X1788760.skimlinks.js"></script>
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
     :root {
@@ -114,6 +115,7 @@
     .sub-btn[data-sub="brunch"].active{ background: linear-gradient(90deg,#BF953F,#FCF6BA,#B38728); color: var(--dark); }
     .sub-btn[data-sub="nightlife"].active    { background: #1A237E; color: #fff; }
     .sub-btn[data-sub="entertainment"].active{ background: #2E7D32; color: #fff; }
+    .sub-btn[data-sub="shopping"].active{ background: #C2185B; color: #fff; }
 
     /* ── SEARCH MODE BANNER ── */
     .search-mode-bar { background: #fff3cd; border: 1px solid #ffe083; border-radius: 8px; padding: 10px 16px; margin-bottom: 1.25rem; font-size: 0.85rem; font-weight: 600; color: #7a5c00; display: none; align-items: center; justify-content: space-between; gap: 10px; }
@@ -137,6 +139,7 @@
     .stripe-drinks{ background: #6B4FBB; }
     .stripe-nightlife    { background: #3949AB; }
     .stripe-entertainment{ background: #2E7D32; }
+    .stripe-shopping{ background: #C2185B; }
     .stripe-brunch{ background: linear-gradient(90deg,#BF953F,#FCF6BA,#B38728); }
     .card-body { padding: 1rem 1.1rem 0.7rem; flex: 1; }
     .card-row1 { display: flex; align-items: flex-start; justify-content: space-between; gap: 0.5rem; margin-bottom: 0.45rem; }
@@ -146,6 +149,7 @@
     .chip-drinks{ background: #EDE7F6; color: #5E35B1; }
     .chip-nightlife    { background: #E8EAF6; color: #283593; }
     .chip-entertainment{ background: #E8F5E9; color: #2E7D32; }
+    .chip-shopping{ background: #FCE4EC; color: #C2185B; }
     .chip-brunch{ background: #FFF8E1; color: #8B6914; }
     .sav-badge { background: var(--yellow); color: var(--dark); font-size: 0.75rem; font-weight: 900; padding: 4px 9px; border-radius: 6px; white-space: nowrap; flex-shrink: 0; }
     .card-venue { font-size: 1.05rem; font-weight: 900; margin-bottom: 0.3rem; line-height: 1.2; }
@@ -271,6 +275,7 @@
     <button class="sub-btn" data-sub="brunch">🥂 Bottomless Brunch</button>
     <button class="sub-btn" data-sub="nightlife">🎉 Nightlife</button>
     <button class="sub-btn" data-sub="entertainment">🎯 Entertainment</button>
+    <button class="sub-btn" data-sub="shopping">🛍️ Shopping</button>
   </div>
 
   <!-- Search mode bar -->
@@ -296,12 +301,33 @@
 
 </main>
 
+<!-- ─── COOKIE BANNER ─── -->
+<div id="cookieBanner" style="display:none;position:fixed;bottom:0;left:0;right:0;background:#1A1A1A;color:rgba(255,255,255,0.8);padding:1rem 1.5rem;z-index:9999;display:flex;align-items:center;justify-content:space-between;gap:1rem;flex-wrap:wrap;font-size:0.82rem;border-top:2px solid #FFCB00;">
+  <p style="margin:0;flex:1;min-width:200px;">We use cookies to understand how people use Sorted MCR so we can improve it. <a href="#" style="color:#FFCB00;text-decoration:underline;">Learn more</a></p>
+  <div style="display:flex;gap:10px;flex-shrink:0;">
+    <button onclick="setCookieChoice(false)" style="background:transparent;border:1px solid rgba(255,255,255,0.3);color:rgba(255,255,255,0.6);padding:8px 18px;border-radius:6px;cursor:pointer;font-size:0.82rem;">Decline</button>
+    <button onclick="setCookieChoice(true)" style="background:#FFCB00;border:none;color:#1A1A1A;padding:8px 18px;border-radius:6px;cursor:pointer;font-weight:700;font-size:0.82rem;">Accept</button>
+  </div>
+</div>
+<script>
+  function setCookieChoice(accepted) {
+    localStorage.setItem('cookieConsent', accepted ? 'accepted' : 'declined');
+    document.getElementById('cookieBanner').style.display = 'none';
+  }
+  (function() {
+    if (!localStorage.getItem('cookieConsent')) {
+      document.getElementById('cookieBanner').style.display = 'flex';
+    }
+  })();
+</script>
+
 <!-- ─── FOOTER ─── -->
 <footer>
   <div class="footer-logo">🐝</div>
   <p><strong>Sorted MCR — Manchester's deals, sorted.</strong></p>
   <p>All information was accurate at time of listing. Deals, prices and times are subject to change at the venue's discretion. Confirm deals with the venue before visiting.</p>
   <p style="margin-top:0.5rem">Got a deal to add? <a href="mailto:hello@sortedmcr.com">hello@sortedmcr.com</a></p>
+  <p style="margin-top:0.75rem;font-size:0.75rem;color:rgba(255,255,255,0.3);">Some links on this site are affiliate links. We may earn a small commission at no extra cost to you.</p>
   <p class="footer-seo">Sorted MCR is a free Manchester deals directory for students. We list the best cheap eats, student discounts, happy hours, cocktail deals and bottomless brunch offers across Manchester city centre — including the Northern Quarter, Ancoats, Deansgate, Great Northern, Corn Exchange and Kampus. Whether you're looking for Monday deals, weekend bottomless brunch or the best happy hour in Manchester, it's all here in one place.</p>
 </footer>
 
@@ -329,6 +355,14 @@ const V = {
   "Foundry Project":   { w: "https://www.foundry-storestreet.co.uk", loc: "Store Street, NQ" },
   "Franco Manca":      { w: "https://www.francomanca.co.uk", loc: "Piccadilly" },
   "House of Fu":       { w: "https://hellohouseoffu.com", loc: "Portland Street" },
+  "ASOS":                  { w: "https://www.asos.com", loc: "Online" },
+  "Apple Education Store": { w: "https://www.apple.com/uk-edu/store", loc: "Online" },
+  "Amazon Prime Student":  { w: "https://www.amazon.co.uk/joinstudent", loc: "Online" },
+  "Spotify":               { w: "https://www.spotify.com/uk/student/", loc: "Online" },
+  "Apple Music":           { w: "https://www.apple.com/uk/apple-music/", loc: "Online" },
+  "UNiDAYS":               { w: "https://www.myunidays.com", loc: "Online" },
+  "Student Beans":         { w: "https://www.studentbeans.com/uk", loc: "Online" },
+  "Headspace":             { w: "https://www.headspace.com/studentplan", loc: "Online" },
   "Junkyard Golf":     { w: "https://www.junkyardgolfclub.co.uk/manchester", loc: "Corn Exchange" },
   "Junior Jackson's":  { w: "https://lostcatnq.co.uk", loc: "Oldham St, NQ" },
   "Lion's Den":        { loc: "Great Northern" },
@@ -487,6 +521,14 @@ const deals = [
 // ════════════ ENTERTAINMENT ════════════
 
 { v:"Junkyard Golf", d:"50% off 9-hole mini golf tickets all day, plus student happy hour with £6 cocktails and £4 pints", s:"entertainment", days:["monday","tuesday","wednesday","thursday"], t:"All day", sav:"50% off golf", hot:false, student:true },
+{ v:"ASOS", d:"10% student discount on everything — verify your student status via Student Beans to unlock. Works on clothing, shoes, accessories and more.", s:"shopping", days:["monday","tuesday","wednesday","thursday","friday","saturday","sunday"], t:"Always on", sav:"10% off", hot:true, student:true, redeem:"https://www.asos.com/student-discount/" },
+{ v:"Apple Education Store", d:"Exclusive student pricing on Mac, iPad, AirPods and accessories. Save up to £150 on a MacBook. Verify with your university email at checkout.", s:"shopping", days:["monday","tuesday","wednesday","thursday","friday","saturday","sunday"], t:"Always on", sav:"Up to £150 off", hot:true, student:true, redeem:"https://www.apple.com/uk-edu/store" },
+{ v:"Amazon Prime Student", d:"6 months of Prime completely free — then 50% off the standard price. Free next-day delivery, Prime Video, Prime Music and more.", s:"shopping", days:["monday","tuesday","wednesday","thursday","friday","saturday","sunday"], t:"Always on", sav:"6 months free", hot:true, student:true, redeem:"https://www.amazon.co.uk/joinstudent" },
+{ v:"Spotify", d:"Student Premium plan — 50% off. Includes Spotify, Hulu and SHOWTIME. Verify via SheerID with your university email.", s:"shopping", days:["monday","tuesday","wednesday","thursday","friday","saturday","sunday"], t:"Always on", sav:"50% off", hot:false, student:true, redeem:"https://www.spotify.com/uk/student/" },
+{ v:"Apple Music", d:"50% off Apple Music with a valid student email. Access 100 million songs ad-free and download for offline listening.", s:"shopping", days:["monday","tuesday","wednesday","thursday","friday","saturday","sunday"], t:"Always on", sav:"50% off", hot:false, student:true, redeem:"https://www.apple.com/uk/apple-music/" },
+{ v:"UNiDAYS", d:"Free app with 100s of student discounts across fashion, food, tech, beauty and more. Sign up free with your university email.", s:"shopping", days:["monday","tuesday","wednesday","thursday","friday","saturday","sunday"], t:"Always on", sav:"Free discounts", hot:true, student:true, redeem:"https://www.myunidays.com" },
+{ v:"Student Beans", d:"Free student discount platform — fashion, food, tech, travel and entertainment deals. Verify once and access all deals instantly.", s:"shopping", days:["monday","tuesday","wednesday","thursday","friday","saturday","sunday"], t:"Always on", sav:"Free discounts", hot:false, student:true, redeem:"https://www.studentbeans.com/uk" },
+{ v:"Headspace", d:"85% off Headspace for students — guided meditation and mindfulness. £9.99 for a full year. Verify with your student email.", s:"shopping", days:["monday","tuesday","wednesday","thursday","friday","saturday","sunday"], t:"Always on", sav:"85% off", hot:false, student:true, redeem:"https://www.headspace.com/studentplan" },
 
 // ════════════ BOTTOMLESS BRUNCH ════════════
 
