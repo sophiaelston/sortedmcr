@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Work With Us | Sorted MCR — Manchester Deals Directory</title>
+  <meta name="description" content="Advertise with Sorted MCR — Manchester's student deals directory. Featured placements, sponsored content and venue partnerships. Reach thousands of students and young professionals." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://sortedmcr.com/work-with-us" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🐝</text></svg>">
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-7Q3WG2HWBX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-7Q3WG2HWBX');
+  </script>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --yellow: #FFCB00;
+      --dark:   #1A1A1A;
+      --page:   #F2EFE9;
+      --card:   #FFFFFF;
+      --muted:  #666;
+      --radius: 14px;
+      --shadow: 0 4px 20px rgba(0,0,0,0.09);
+    }
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; background: var(--page); color: var(--dark); min-height: 100vh; }
+
+    /* HEADER */
+    header { background: var(--dark); color: #fff; padding: 0 1.25rem; position: sticky; top: 0; z-index: 100; box-shadow: 0 2px 16px rgba(0,0,0,0.35); }
+    .header-inner { max-width: 1100px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; height: 60px; }
+    .logo { display: flex; align-items: center; gap: 9px; text-decoration: none; color: #fff; }
+    .logo-bee { font-size: 1.5rem; }
+    .logo-text { font-size: 1.35rem; font-weight: 900; letter-spacing: -0.5px; }
+    .logo-text .y { color: var(--yellow); }
+    .back-link { color: rgba(255,255,255,0.6); font-size: 0.78rem; font-weight: 700; text-decoration: none; padding: 6px 14px; border: 1px solid rgba(255,255,255,0.2); border-radius: 20px; transition: all 0.15s; }
+    .back-link:hover { color: #fff; border-color: rgba(255,255,255,0.5); }
+
+    /* HERO */
+    .hero { background: linear-gradient(140deg, #111 0%, #2a1260 60%, #1a3a5c 100%); color: #fff; padding: 3rem 1.25rem 2.5rem; text-align: center; }
+    .hero-eyebrow { font-size: 0.75rem; font-weight: 800; letter-spacing: 2px; text-transform: uppercase; color: var(--yellow); margin-bottom: 0.7rem; }
+    .hero h1 { font-size: clamp(1.8rem, 5vw, 2.8rem); font-weight: 900; line-height: 1.15; margin-bottom: 0.75rem; }
+    .hero h1 .y { color: var(--yellow); }
+    .hero-sub { font-size: 1rem; color: rgba(255,255,255,0.68); max-width: 540px; margin: 0 auto 1.6rem; line-height: 1.6; }
+    .hero-cta { display: inline-block; background: var(--yellow); color: var(--dark); font-weight: 900; font-size: 0.95rem; padding: 13px 28px; border-radius: 10px; text-decoration: none; transition: opacity 0.15s; }
+    .hero-cta:hover { opacity: 0.88; }
+
+    /* STATS STRIP */
+    .stats-strip { background: var(--yellow); padding: 0.9rem 1.25rem; }
+    .stats-inner { max-width: 1100px; margin: 0 auto; display: flex; gap: 2rem; justify-content: center; flex-wrap: wrap; }
+    .stat { font-size: 0.85rem; font-weight: 800; color: var(--dark); display: flex; align-items: center; gap: 7px; }
+    .stat-num { font-size: 1.4rem; font-weight: 900; }
+
+    /* MAIN */
+    .wrap { max-width: 1100px; margin: 0 auto; padding: 2.5rem 1.25rem 4rem; }
+    .section-title { font-size: 1.5rem; font-weight: 900; margin-bottom: 0.4rem; }
+    .section-sub { font-size: 0.9rem; color: var(--muted); margin-bottom: 1.6rem; line-height: 1.5; }
+
+    /* OFFERINGS GRID */
+    .offerings-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 1.2rem; margin-bottom: 3rem; }
+    .offering-card { background: var(--card); border-radius: var(--radius); box-shadow: var(--shadow); overflow: hidden; display: flex; flex-direction: column; }
+    .offering-stripe { height: 5px; }
+    .offering-body { padding: 1.3rem 1.3rem 1rem; flex: 1; }
+    .offering-icon { font-size: 1.8rem; margin-bottom: 0.6rem; }
+    .offering-title { font-size: 1rem; font-weight: 900; margin-bottom: 0.4rem; }
+    .offering-desc { font-size: 0.84rem; color: #444; line-height: 1.55; }
+    .offering-footer { padding: 0.75rem 1.3rem 1rem; border-top: 1px solid #f0f0f0; display: flex; align-items: center; justify-content: space-between; }
+    .offering-price { font-size: 0.82rem; font-weight: 800; color: var(--dark); }
+    .offering-badge { font-size: 0.7rem; font-weight: 800; padding: 3px 9px; border-radius: 20px; background: #E8F5E9; color: #2E7D32; }
+
+    /* WHAT WE WON'T DO */
+    .honest-box { background: #fff; border: 1px solid #eee; border-radius: var(--radius); padding: 1.5rem 1.75rem; margin-bottom: 3rem; }
+    .honest-box h3 { font-size: 1rem; font-weight: 900; margin-bottom: 0.8rem; }
+    .honest-list { display: grid; grid-template-columns: 1fr 1fr; gap: 0.5rem 1.5rem; }
+    .honest-item { font-size: 0.83rem; color: #444; display: flex; align-items: flex-start; gap: 8px; line-height: 1.4; }
+    .honest-item .icon { flex-shrink: 0; margin-top: 1px; }
+    @media(max-width:560px) { .honest-list { grid-template-columns: 1fr; } }
+
+    /* PROCESS */
+    .process-steps { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 1rem; margin-bottom: 3rem; }
+    .step { background: var(--card); border-radius: var(--radius); padding: 1.2rem; box-shadow: var(--shadow); text-align: center; }
+    .step-num { width: 36px; height: 36px; border-radius: 50%; background: var(--dark); color: var(--yellow); font-size: 0.9rem; font-weight: 900; display: flex; align-items: center; justify-content: center; margin: 0 auto 0.7rem; }
+    .step-title { font-size: 0.88rem; font-weight: 900; margin-bottom: 0.3rem; }
+    .step-desc { font-size: 0.78rem; color: var(--muted); line-height: 1.45; }
+
+    /* CONTACT */
+    .contact-section { background: linear-gradient(135deg, #1A1A1A 0%, #2a1260 100%); border-radius: var(--radius); padding: 2.5rem 2rem; color: #fff; text-align: center; }
+    .contact-section h2 { font-size: 1.6rem; font-weight: 900; margin-bottom: 0.5rem; }
+    .contact-section p { color: rgba(255,255,255,0.65); font-size: 0.9rem; margin-bottom: 1.6rem; line-height: 1.5; max-width: 480px; margin-left: auto; margin-right: auto; }
+    .contact-email-btn { display: inline-block; background: var(--yellow); color: var(--dark); font-weight: 900; font-size: 0.95rem; padding: 13px 28px; border-radius: 10px; text-decoration: none; transition: opacity 0.15s; }
+    .contact-email-btn:hover { opacity: 0.88; }
+    .contact-socials { margin-top: 1.2rem; display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; }
+    .contact-socials a { color: rgba(255,255,255,0.6); font-size: 0.8rem; font-weight: 700; text-decoration: none; }
+    .contact-socials a:hover { color: var(--yellow); }
+
+    /* FOOTER */
+    footer { background: var(--dark); color: rgba(255,255,255,0.4); text-align: center; padding: 1.5rem 1.25rem; font-size: 0.78rem; line-height: 1.6; }
+    footer a { color: var(--yellow); text-decoration: none; }
+  </style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header>
+  <div class="header-inner">
+    <a href="index.html" class="logo">
+      <span class="logo-bee">🐝</span>
+      <span class="logo-text"><span class="y">Sorted</span> MCR</span>
+    </a>
+    <a href="index.html" class="back-link">← Back to deals</a>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <p class="hero-eyebrow">💼 Work with Sorted MCR</p>
+  <h1>Reach Manchester's students.<br><span class="y">Without the noise.</span></h1>
+  <p class="hero-sub">Sorted MCR is a free deals directory built for Manchester's students and young professionals. Real audience, local intent, zero fluff — your deal in front of people who are actively looking to go out and spend money.</p>
+  <a href="#contact" class="hero-cta">Get in touch →</a>
+</section>
+
+<!-- STATS STRIP -->
+<div class="stats-strip">
+  <div class="stats-inner">
+    <div class="stat"><span class="stat-num">📍</span> Ancoats · NQ · Deansgate · Chorlton · and more</div>
+    <div class="stat"><span class="stat-num">🎓</span> Student &amp; young professional audience</div>
+    <div class="stat"><span class="stat-num">📲</span> Instagram @sortedmcrdeals · TikTok @sortedmcr</div>
+  </div>
+</div>
+
+<!-- MAIN -->
+<div class="wrap">
+
+  <!-- WHAT'S ON OFFER -->
+  <p class="section-title" style="margin-top:0.5rem">What we offer</p>
+  <p class="section-sub">Simple, honest placements that feel native to the site — not banner ads that everyone ignores.</p>
+
+  <div class="offerings-grid">
+
+    <div class="offering-card">
+      <div class="offering-stripe" style="background:#FFCB00"></div>
+      <div class="offering-body">
+        <div class="offering-icon">⭐</div>
+        <div class="offering-title">Featured placement</div>
+        <div class="offering-desc">Your deal sits at the top of the directory page in a highlighted gold card, above all organic listings. Labelled as "Sponsored" — but it looks good, not spammy. Seen by everyone who visits that week.</div>
+      </div>
+      <div class="offering-footer">
+        <span class="offering-price">From £50 / week</span>
+        <span class="offering-badge">Most popular</span>
+      </div>
+    </div>
+
+    <div class="offering-card">
+      <div class="offering-stripe" style="background:#6B4FBB"></div>
+      <div class="offering-body">
+        <div class="offering-icon">📍</div>
+        <div class="offering-title">Priority listing</div>
+        <div class="offering-desc">Your venue's existing deal listing is pinned to the top of its category (Happy Hour, Bottomless Brunch, etc.) with a subtle highlight. Great for venues already on the directory who want more visibility.</div>
+      </div>
+      <div class="offering-footer">
+        <span class="offering-price">From £30 / week</span>
+        <span class="offering-badge">Low effort</span>
+      </div>
+    </div>
+
+    <div class="offering-card">
+      <div class="offering-stripe" style="background:#2BBFAE"></div>
+      <div class="offering-body">
+        <div class="offering-icon">✍️</div>
+        <div class="offering-title">Sponsored content</div>
+        <div class="offering-desc">A dedicated write-up of your venue or deal — "Best rooftop bars in Manchester", "Top 5 happy hours in Ancoats" etc. — with your venue featured prominently. Clearly labelled, genuinely useful for readers.</div>
+      </div>
+      <div class="offering-footer">
+        <span class="offering-price">From £100 / post</span>
+        <span class="offering-badge">High impact</span>
+      </div>
+    </div>
+
+    <div class="offering-card">
+      <div class="offering-stripe" style="background:#E63946"></div>
+      <div class="offering-body">
+        <div class="offering-icon">🤝</div>
+        <div class="offering-title">Venue partnership</div>
+        <div class="offering-desc">A longer-term "Sorted MCR x [Your Venue]" collab — exclusive deal for our audience, joint social content on Instagram and TikTok, priority placement across the site. Revenue share or flat-fee, we're flexible.</div>
+      </div>
+      <div class="offering-footer">
+        <span class="offering-price">Let's talk</span>
+        <span class="offering-badge">Best value</span>
+      </div>
+    </div>
+
+    <div class="offering-card">
+      <div class="offering-stripe" style="background:#FF6B35"></div>
+      <div class="offering-body">
+        <div class="offering-icon">📧</div>
+        <div class="offering-title">Newsletter feature</div>
+        <div class="offering-desc">A sponsored slot in our weekly email — sent every week to subscribers who've opted in for Manchester's best deals. Direct line to a hyper-local, deal-hungry audience in their inbox.</div>
+      </div>
+      <div class="offering-footer">
+        <span class="offering-price">From £40 / send</span>
+        <span class="offering-badge">Growing fast</span>
+      </div>
+    </div>
+
+    <div class="offering-card">
+      <div class="offering-stripe" style="background:#2E7D32"></div>
+      <div class="offering-body">
+        <div class="offering-icon">🎯</div>
+        <div class="offering-title">Get listed (free)</div>
+        <div class="offering-desc">If you've got a genuine deal — happy hour, student discount, bottomless brunch — we'll add it to the directory for free. No catch. We only list deals that are actually good value. That's the whole point.</div>
+      </div>
+      <div class="offering-footer">
+        <span class="offering-price">Free</span>
+        <span class="offering-badge">Always available</span>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- WHAT WE WON'T DO -->
+  <div class="honest-box">
+    <h3>🙅 What we won't do</h3>
+    <div class="honest-list">
+      <div class="honest-item"><span class="icon">✗</span><span>Plaster your banner across every page (ruins the experience for everyone)</span></div>
+      <div class="honest-item"><span class="icon">✗</span><span>Write fake reviews or pretend a bad deal is good</span></div>
+      <div class="honest-item"><span class="icon">✗</span><span>Hide that something is sponsored (we're transparent with our audience)</span></div>
+      <div class="honest-item"><span class="icon">✗</span><span>Lock you into long contracts — start small and see how it goes</span></div>
+    </div>
+  </div>
+
+  <!-- HOW IT WORKS -->
+  <p class="section-title">How it works</p>
+  <p class="section-sub">Simple and fast. No lengthy onboarding, no agency faff.</p>
+  <div class="process-steps">
+    <div class="step">
+      <div class="step-num">1</div>
+      <div class="step-title">Get in touch</div>
+      <div class="step-desc">Drop us an email with your venue, your deal and what you're looking to achieve.</div>
+    </div>
+    <div class="step">
+      <div class="step-num">2</div>
+      <div class="step-title">We agree a slot</div>
+      <div class="step-desc">We'll recommend the right placement type and price, you approve the deal copy.</div>
+    </div>
+    <div class="step">
+      <div class="step-num">3</div>
+      <div class="step-title">Go live</div>
+      <div class="step-desc">Your deal is live on the site (and potentially our social channels) within 24 hours.</div>
+    </div>
+    <div class="step">
+      <div class="step-num">4</div>
+      <div class="step-title">Track results</div>
+      <div class="step-desc">We share basic stats — page views, click-throughs — so you can see what you're getting.</div>
+    </div>
+  </div>
+
+  <!-- CONTACT -->
+  <div class="contact-section" id="contact">
+    <h2>Ready to get started?</h2>
+    <p>Drop us a line and we'll get back to you within 24 hours. Tell us your venue, your deal and roughly what you're looking for — we'll take it from there.</p>
+    <a href="mailto:hello@sortedmcr.com?subject=Work with us enquiry" class="contact-email-btn">Email hello@sortedmcr.com →</a>
+    <div class="contact-socials">
+      <a href="https://www.instagram.com/sortedmcrdeals/" target="_blank" rel="noopener">Instagram @sortedmcrdeals</a>
+      <span style="color:rgba(255,255,255,0.2)">·</span>
+      <a href="https://www.tiktok.com/@sortedmcr" target="_blank" rel="noopener">TikTok @sortedmcr</a>
+    </div>
+  </div>
+
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <p><strong style="color:rgba(255,255,255,0.7)">Sorted MCR</strong> — Manchester's deals, sorted.</p>
+  <p style="margin-top:0.4rem"><a href="index.html">← Back to the deals directory</a></p>
+</footer>
+
+</body>
+</html>
