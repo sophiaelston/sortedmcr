@@ -216,6 +216,44 @@
     .disclaimer { background: #fff; border: 1px solid #eee; border-radius: var(--radius); padding: 1rem 1.25rem; margin-bottom: 1.5rem; font-size: 0.8rem; color: #777; line-height: 1.5; }
     .disclaimer strong { color: var(--dark); }
 
+    /* ── FEATURED SECTION ── */
+    .featured-section { margin-bottom: 1.6rem; }
+    .featured-label { font-size: 0.7rem; font-weight: 800; letter-spacing: 1.5px; text-transform: uppercase; color: #8B6914; margin-bottom: 0.6rem; display: flex; align-items: center; gap: 6px; }
+    .featured-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(295px, 1fr)); gap: 1.1rem; }
+    .featured-card { background: linear-gradient(145deg, #fffef7 0%, #fff9e0 100%); border: 1.5px solid #f0d060; border-radius: var(--radius); box-shadow: 0 4px 20px rgba(180,140,0,0.12); overflow: hidden; display: flex; flex-direction: column; position: relative; transition: transform 0.18s, box-shadow 0.18s; }
+    .featured-card:hover { transform: translateY(-3px); box-shadow: 0 10px 36px rgba(180,140,0,0.18); }
+    .featured-stripe { height: 4px; background: linear-gradient(90deg, #BF953F, #FCF6BA, #B38728); }
+    .featured-badge { position: absolute; top: 10px; right: 10px; background: #8B6914; color: #fff; font-size: 0.6rem; font-weight: 800; padding: 3px 8px; border-radius: 6px; letter-spacing: 0.6px; text-transform: uppercase; }
+    .featured-body { padding: 1rem 1.1rem 0.7rem; flex: 1; }
+    .featured-chip { font-size: 0.67rem; font-weight: 800; letter-spacing: 0.5px; text-transform: uppercase; padding: 3px 8px; border-radius: 6px; background: #FFF8E1; color: #8B6914; display: inline-block; margin-bottom: 0.5rem; }
+    .featured-venue { font-size: 1.05rem; font-weight: 900; margin-bottom: 0.3rem; }
+    .featured-venue a { color: var(--dark); text-decoration: none; border-bottom: 2px solid #f0d060; transition: color 0.15s; }
+    .featured-venue a:hover { color: #8B6914; }
+    .featured-deal { font-size: 0.88rem; color: #333; line-height: 1.45; margin-bottom: 0.6rem; }
+    .featured-footer { padding: 0.6rem 1.1rem 0.75rem; display: flex; align-items: center; justify-content: space-between; gap: 0.5rem; border-top: 1px solid #f0d060; flex-wrap: wrap; }
+    .featured-cta { display: inline-block; background: #8B6914; color: #fff; font-size: 0.75rem; font-weight: 800; padding: 6px 14px; border-radius: 8px; text-decoration: none; transition: background 0.15s; }
+    .featured-cta:hover { background: #6a4f10; }
+    /* Advertise slot */
+    .advertise-slot { border: 2px dashed #ddd; border-radius: var(--radius); padding: 1.4rem 1.25rem; display: flex; align-items: center; justify-content: space-between; gap: 1rem; background: #fafafa; flex-wrap: wrap; }
+    .advertise-slot-text h3 { font-size: 0.95rem; font-weight: 900; color: var(--dark); margin-bottom: 0.2rem; }
+    .advertise-slot-text p { font-size: 0.78rem; color: var(--muted); line-height: 1.4; }
+    .advertise-cta { background: var(--dark); color: var(--yellow); font-size: 0.78rem; font-weight: 800; padding: 9px 18px; border-radius: 8px; text-decoration: none; white-space: nowrap; transition: background 0.15s; flex-shrink: 0; }
+    .advertise-cta:hover { background: #333; }
+
+    /* ── EMAIL CAPTURE ── */
+    .email-capture { background: linear-gradient(135deg, #1A1A1A 0%, #2a1260 100%); border-radius: var(--radius); padding: 1.4rem 1.5rem; margin-bottom: 1.6rem; display: flex; align-items: center; gap: 1.5rem; flex-wrap: wrap; }
+    .email-capture-text { flex: 1; min-width: 200px; }
+    .email-capture-text h3 { font-size: 1rem; font-weight: 900; color: #fff; margin-bottom: 0.25rem; }
+    .email-capture-text p { font-size: 0.8rem; color: rgba(255,255,255,0.6); line-height: 1.4; }
+    .email-form { display: flex; gap: 8px; flex-wrap: wrap; flex-shrink: 0; }
+    .email-input { padding: 10px 16px; border-radius: 8px; border: none; font-size: 0.85rem; background: rgba(255,255,255,0.12); color: #fff; outline: none; min-width: 200px; transition: background 0.2s; }
+    .email-input::placeholder { color: rgba(255,255,255,0.4); }
+    .email-input:focus { background: rgba(255,255,255,0.18); }
+    .email-btn { background: var(--yellow); color: var(--dark); font-size: 0.82rem; font-weight: 800; padding: 10px 18px; border-radius: 8px; border: none; cursor: pointer; white-space: nowrap; transition: opacity 0.15s; }
+    .email-btn:hover { opacity: 0.88; }
+    .email-success { display: none; color: var(--yellow); font-weight: 700; font-size: 0.88rem; }
+    @media(max-width:600px) { .email-capture { padding: 1.1rem; } .email-input { min-width: 0; width: 100%; } .email-form { width: 100%; } .email-btn { width: 100%; } .advertise-slot { flex-direction: column; } }
+
     /* ── FOOTER ── */
     footer { background: var(--dark); color: rgba(255,255,255,0.45); text-align: center; padding: 2rem 1.25rem; margin-top: 3rem; font-size: 0.8rem; line-height: 1.6; }
     .footer-seo { margin-top: 1.25rem; padding-top: 1.25rem; border-top: 1px solid rgba(255,255,255,0.08); color: rgba(255,255,255,0.22); font-size: 0.72rem; max-width: 680px; margin-left: auto; margin-right: auto; line-height: 1.7; }
@@ -242,6 +280,8 @@
       <span class="logo-text"><span class="y">Sorted</span> <span style="display:inline-flex;flex-direction:column;vertical-align:middle">MCR</span></span>
     </a>
     <span class="header-tag">Manchester's deals, sorted.</span>
+    <div style="display:flex;align-items:center;gap:10px;">
+    <a href="work-with-us.html" style="color:var(--yellow);font-size:0.73rem;font-weight:800;text-decoration:none;padding:5px 12px;border:1px solid rgba(255,203,0,0.4);border-radius:16px;white-space:nowrap;letter-spacing:0.2px;transition:background 0.15s;" onmouseover="this.style.background='rgba(255,203,0,0.12)'" onmouseout="this.style.background='transparent'">Work with us</a>
     <div class="social-links">
       <a href="https://www.instagram.com/sortedmcrdeals/" target="_blank" rel="noopener" class="social-link social-link-ig" aria-label="Instagram">
         <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
@@ -251,6 +291,7 @@
         <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V8.69a8.2 8.2 0 004.79 1.53V6.76a4.84 4.84 0 01-1.02-.07z"/></svg>
         <span>@sortedmcr</span>
       </a>
+    </div>
     </div>
   </div>
 </header>
@@ -310,6 +351,35 @@
   <!-- Disclaimer -->
   <div class="disclaimer">
     <strong>📋 Quick heads up:</strong> Deals are accurate at the time of listing but can change — always double-check with the venue before heading out. Venue names link to their website. New deals added regularly, so check back often!
+  </div>
+
+  <!-- ── FEATURED SECTION ── -->
+  <div class="featured-section" id="featuredSection">
+    <p class="featured-label">⭐ Featured this week</p>
+    <div class="featured-grid" id="featuredGrid">
+      <!-- Featured venue cards injected by JS — see FEATURED array below -->
+    </div>
+    <!-- Advertise slot (shown when no featured deals, or always as second slot) -->
+    <div class="advertise-slot" id="advertiseSlot" style="margin-top:0.75rem">
+      <div class="advertise-slot-text">
+        <h3>Your venue here</h3>
+        <p>Get your deal in front of Manchester's students and young professionals. Featured placements start from £50/week.</p>
+      </div>
+      <a href="work-with-us.html" class="advertise-cta">Work with us →</a>
+    </div>
+  </div>
+
+  <!-- ── EMAIL CAPTURE ── -->
+  <div class="email-capture">
+    <div class="email-capture-text">
+      <h3>🐝 Get the best deals every week</h3>
+      <p>Manchester's top happy hours, new openings and student offers — straight to your inbox. No spam, unsubscribe anytime.</p>
+    </div>
+    <div>
+      <!-- Replace the href below with your Mailchimp / Substack signup URL -->
+      <a href="https://sortedmcr.substack.com" target="_blank" rel="noopener" class="email-btn" style="display:inline-block;text-decoration:none;">Subscribe free →</a>
+      <p style="font-size:0.7rem;color:rgba(255,255,255,0.35);margin-top:6px;text-align:center;">No spam · Unsubscribe anytime</p>
+    </div>
   </div>
 
   <!-- Day nav -->
@@ -394,12 +464,58 @@
     </a>
   </div>
   <p>Deals change — always confirm with the venue before you head out.</p>
-  <p style="margin-top:0.5rem">Know a deal we're missing? <a href="mailto:hello@sortedmcr.com">hello@sortedmcr.com</a></p>
+  <p style="margin-top:0.5rem">Know a deal we're missing? <a href="mailto:hello@sortedmcr.com">hello@sortedmcr.com</a> · <a href="work-with-us.html">Work with us</a></p>
   <p style="margin-top:0.75rem;font-size:0.75rem;color:rgba(255,255,255,0.3);">Some links on this site are affiliate links. We may earn a small commission at no extra cost to you.</p>
   <p class="footer-seo">Sorted MCR is a free Manchester deals directory for students. We list the best cheap eats, student discounts, happy hours, cocktail deals and bottomless brunch offers across Manchester city centre — including Ancoats, the Northern Quarter, Deansgate, Great Northern, Chorlton, Corn Exchange and Kampus. Whether you're after Ancoats happy hours, the best cocktail deals in Manchester, Monday deals or weekend bottomless brunch, it's all here in one place. Follow us on Instagram @sortedmcrdeals and TikTok @sortedmcr for daily deal alerts.</p>
 </footer>
 
 <script>
+// ─────────────────────────────────────────────
+// FEATURED PLACEMENTS
+// To add a paid featured venue, add an object to this array.
+// Fields: name, url, loc, deal, time, cta (optional link text), ctaUrl (optional)
+// Leave array empty [] to show only the "advertise here" slot.
+// ─────────────────────────────────────────────
+const FEATURED = [
+  // Example (delete or replace with a real placement):
+  // { name: "Ramona", url: "https://ramonamanchester.co.uk", loc: "Swan St, Ancoats",
+  //   deal: "Bottomless Frozen Margaritas + pizza from £29pp — book now for Saturday sessions",
+  //   time: "Sat 12pm–5pm", cta: "Book now →", ctaUrl: "https://ramonamanchester.co.uk" }
+];
+
+function renderFeatured() {
+  const grid = document.getElementById("featuredGrid");
+  const slot = document.getElementById("advertiseSlot");
+  grid.innerHTML = "";
+  if (FEATURED.length === 0) {
+    slot.style.display = "flex";
+    return;
+  }
+  FEATURED.forEach(f => {
+    const card = document.createElement("div");
+    card.className = "featured-card";
+    card.innerHTML = `
+      <div class="featured-stripe"></div>
+      <span class="featured-badge">Sponsored</span>
+      <div class="featured-body">
+        <span class="featured-chip">⭐ Featured deal</span>
+        <div class="featured-venue"><a href="${f.url}" target="_blank" rel="noopener">${f.name}</a></div>
+        <div class="featured-deal">${f.deal}</div>
+      </div>
+      <div class="featured-footer">
+        <div>
+          <span style="font-size:0.7rem;font-weight:700;padding:3px 9px;border-radius:20px;background:#FFF8E1;color:#8B6914;">📍 ${f.loc}</span>
+          <span style="font-size:0.7rem;color:#999;font-weight:600;margin-left:8px;">🕐 ${f.time}</span>
+        </div>
+        ${f.ctaUrl ? `<a class="featured-cta" href="${f.ctaUrl}" target="_blank" rel="noopener">${f.cta || "View deal →"}</a>` : ""}
+      </div>
+    `;
+    grid.appendChild(card);
+  });
+  // Always show advertise slot as second slot
+  slot.style.display = "flex";
+}
+
 // ─────────────────────────────────────────────
 // VENUE DATA  (name → website + location)
 // ─────────────────────────────────────────────
@@ -869,6 +985,7 @@ function setup() {
 // INIT
 // ─────────────────────────────────────────────
 (function init() {
+  renderFeatured();
   updateDayCounts();
   updateStatsBar();
   setup();
