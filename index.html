@@ -209,7 +209,17 @@
     .brunch-dur { font-size: 0.75rem; font-weight: 600; color: #9a7a1c; margin-bottom: 0.5rem; }
     .book-btn { display: inline-block; background: var(--dark); color: var(--yellow); font-size: 0.75rem; font-weight: 800; padding: 6px 14px; border-radius: 8px; text-decoration: none; letter-spacing: 0.3px; transition: background 0.15s; }
     .book-btn:hover { background: #333; }
-
+    
+    /* ── FREE DRINK SIGN-UPS ── */
+    .freedrink-section { margin-bottom: 1.6rem; }
+    .freedrink-label { font-size: 0.7rem; font-weight: 800; letter-spacing: 1.5px; text-transform: uppercase; color: var(--muted); margin-bottom: 0.6rem; }
+    .freedrink-row { display: flex; gap: 0.65rem; flex-wrap: wrap; }
+    .fd-card { background: var(--card); border: 1.5px solid #e0e0e0; border-radius: 10px; padding: 0.7rem 0.9rem; display: flex; flex-direction: column; gap: 0.2rem; text-decoration: none; transition: border-color 0.18s, box-shadow 0.18s; min-width: 160px; flex: 1; }
+    .fd-card:hover { border-color: var(--yellow); box-shadow: 0 4px 16px rgba(255,203,0,0.18); }
+    .fd-name { font-size: 0.82rem; font-weight: 800; color: var(--dark); line-height: 1.2; }
+    .fd-how { font-size: 0.72rem; color: var(--muted); }
+    .fd-cta { font-size: 0.7rem; font-weight: 800; color: #2E7D32; margin-top: 0.15rem; }
+    
     /* ── NO RESULTS ── */
     .no-results { text-align: center; padding: 3rem; color: var(--muted); display: none; }
     .no-results.show { display: block; }
@@ -350,7 +360,20 @@
 
 <!-- ─── MAIN ─── -->
 <main class="main-wrap">
-
+  <!-- FREE DRINK SIGN-UPS -->
+  <div class="freedrink-section">
+    <p class="freedrink-label">🍺 Free drink sign-ups</p>
+    <div class="freedrink-row">
+      <a class="fd-card" href="https://www.thepiccadillytavernmanchester.co.uk/signup#/" target="_blank" rel="noopener">
+        <span class="fd-name">The Piccadilly Tavern</span>
+        <span class="fd-how">Newsletter sign-up</span>
+        <span class="fd-cta">Claim </span>
+      </a>
+      <a class="fd-card" href="https://www.nicholsonspubs.co.uk/restaurants/northwest/thebankmanchester/app#/" target="_blank" rel="noopener">
+        <span class="fd-name">The Bank (Nicholson's)</span>
+        <span class="fd-how">Download the app</span>
+        <span class="fd-cta">Claim </span>
+      </a 
   <!-- Disclaimer -->
   <div class="disclaimer">
     <strong>📋 Quick heads up:</strong> Deals are accurate at the time of listing but can change — always double-check with the venue before heading out. Venue names link to their website. New deals added regularly, so check back often!
